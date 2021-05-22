@@ -1,5 +1,23 @@
+body {
+  margin: 0;
+}
+
 .base-template {
   margin: 0 auto;
   padding: 8px;
   max-width: 425px;
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.fab {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+
+  &_centered {
+    right: 50%;
+    transform: translateX(50%);
+  }
 }

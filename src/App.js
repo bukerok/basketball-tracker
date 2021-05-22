@@ -10,6 +10,7 @@ import {
   PAGES_ROOTS,
   getRootLink,
 } from './helpers/navigation';
+import AddShootingPage from './pages/addShooting';
 import Shooting from './pages/shooting';
 import Statistics from './pages/statistics';
 
@@ -22,6 +23,10 @@ function App() {
             exact
             path="/"
             component={Statistics}
+          />
+          <Route
+            path={getRootLink(PAGES_ROOTS.addShooting)}
+            component={AddShootingPage}
           />
           <Route
             path={getRootLink(PAGES_ROOTS.shooting)}
