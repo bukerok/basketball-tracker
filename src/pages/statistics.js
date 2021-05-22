@@ -1,8 +1,11 @@
+import ShootingPanel from '../components/ShootingPanel';
+import BaseTemplate from './baseTemplate';
+
 const StatisticsPage = () => {
   return (
-    <div>
-      Statistics Page component
-    </div>
+    <BaseTemplate>
+      <ShootingPanel />
+    </BaseTemplate>
   );
 };
 

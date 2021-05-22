@@ -1,0 +1,17 @@
+.shooting-panel {
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    padding-bottom: 0;
+  }
+
+  &__info-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .info__title {
+      font-weight: 500;
+    }
+  }
+}
