@@ -1,0 +1,25 @@
+<svg viewBox="0 0 15000 14000" xmlns="http://www.w3.org/2000/svg">
+  <g id="zone1">
+    <path fill="transparent" stroke="black" stroke-width="20px" d="M 6250 0 v 1575 A 1250 1250 0 0 0 8750 1575 v -1575 Z"/>
+  </g>
+  <g id="zone2">
+    <path fill="transparent" stroke="black" stroke-width="20px" d="M 3275 0 v 1575 A 4225 4225 0 0 0 11725 1575 v -1575 Z"/>
+  </g>
+  <g id="zone3"></g>
+  <g id="zone4"></g>
+  <g id="zone5"></g>
+  <g id="zone6"></g>
+  <g id="zone7"></g>
+  <g id="zone8"></g>
+  <g id="zone9"></g>
+  <g id="zone10"></g>
+  <g id="zone11"></g>
+  <g id="zone12"></g>
+  <g id="zone13"></g>
+  <g id="zone14"></g>
+  <path fill="transparent" stroke="black" stroke-width="20px" d="M 900 0 V 2990 A 6750 6750 0 0 0 14400 2990 V 0 Z"/>
+  <g>
+    <path fill="transparent" stroke="black" stroke-width="20px" d="M 5050 0 V 5800 h 4900 v -5800 Z"/>
+    <path fill="transparent" stroke="black" stroke-width="20px" d="M 5700 5800 A 1800 1800 0 0 0 9300 5800 Z"/>
+  </g>
+</svg>
