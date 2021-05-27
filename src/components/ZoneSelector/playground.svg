@@ -1,0 +1,10 @@
+<svg viewBox="0 0 15000 14000" xmlns="http://www.w3.org/2000/svg">
+  <path fill="transparent" stroke="black" stroke-width="100px" d="M 900 0 V 2990 A 6750 6750 0 0 0 14400 2990 V 0"/>
+  <g>
+    <path fill="transparent" stroke="black" stroke-width="100px" d="M 5050 0 V 5800 h 4900 v -5800"/>
+    <path fill="transparent" stroke="black" stroke-width="100px" d="M 5700 5800 A 1800 1800 0 0 0 9300 5800"/>
+  </g>
+  <g>
+    <path fill="transparent" stroke="black" stroke-width="100px" d="M 6250 1200 v 375 A 1250 1250 0 0 0 8750 1575 v -375"/>
+  </g>
+</svg>
