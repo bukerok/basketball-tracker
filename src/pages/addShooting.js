@@ -1,11 +1,20 @@
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { useHistory } from 'react-router';
 import Button from '@material-ui/core/Button';
 
 import ZoneSelector from '../components/ZoneSelector';
-import BaseTemplate from './baseTemplate';
 import ShotsInput from '../components/ShotsInput';
+import { addRecord } from '../store/features/shots/shotsSlice';
+import {
+  getRootLink,
+  PAGES_ROOTS,
+} from '../helpers/navigation';
+import BaseTemplate from './baseTemplate';
 
 const AddShootingPage = () => {
+  const history = useHistory();
+  const dispatch = useDispatch();
   const [zone, setZone] = useState(1);
   const [shots, setShots] = useState(null);
 
@@ -22,13 +31,24 @@ const AddShootingPage = () => {
       return;
     }
 
-    if (shots.error) {
-      console.error(shots.error);
+    const {
+      error,
+      score,
+      attempts,
+    } = shots;
+
+    if (error) {
+      console.error(error);
 
       return;
     }
 
-    console.log(`Add record zone: ${zone}, score: ${shots.score}, attempts: ${shots.attempts}.`);
+    dispatch(addRecord({
+      zone,
+      score,
+      attempts,
+    }));
+    history.push(getRootLink(PAGES_ROOTS.shooting));
   };
 
   return (

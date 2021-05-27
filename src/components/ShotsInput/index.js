@@ -34,13 +34,13 @@ export default function ShotsInput({
   const [attempts, setAttempts] = useState('');
 
   const handleScoreChange = (e) => {
-    const value = parseInt(e.target.value);
+    const value = parseInt(e.target.value) || '';
 
     setScore(value);
     onChange(getValue(value, attempts));
   };
   const handleAttemptsChange = (e) => {
-    const value = parseInt(e.target.value);
+    const value = parseInt(e.target.value) || '';
 
     setAttempts(value);
     onChange(getValue(score, value));
