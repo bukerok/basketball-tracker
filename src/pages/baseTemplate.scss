@@ -9,15 +9,12 @@ body {
   height: 100vh;
   box-sizing: border-box;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .fab {
   position: absolute;
   right: 16px;
   bottom: 16px;
-
-  &_centered {
-    right: 50%;
-    transform: translateX(50%);
-  }
 }

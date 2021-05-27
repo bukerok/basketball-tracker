@@ -1,0 +1,11 @@
+.zone-selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+
+  &__image {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
