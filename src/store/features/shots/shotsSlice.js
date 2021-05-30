@@ -16,6 +16,15 @@ export const setupRecords = createAsyncThunk(
 
     return records;
   },
+  {
+    condition: (payload, { getState }) => {
+      const { status } = getState().shots;
+
+      if (status === 'loading' || status === 'fetched') {
+        return false;
+      }
+    },
+  },
 );
 
 export const addRecord = createAsyncThunk(
@@ -41,7 +50,7 @@ export const shotsSlice = createSlice({
         state.status = 'loading';
       })
       .addCase(setupRecords.fulfilled, (state, action) => {
-        state.status = 'idle';
+        state.status = 'fetched';
         state.records = action.payload;
       })
       .addCase(addRecord.fulfilled, (state, action) => {
