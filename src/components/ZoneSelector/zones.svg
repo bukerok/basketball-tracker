@@ -8,9 +8,9 @@
   <g id="zone3">
     <path fill="transparent" stroke="black" stroke-width="20px" d="M 6623.5 2466 L 4520 4570 A 4225 4225 0 0 0 10480 4570 L 8377 2466 A 1250 1250 0 0 1 6623.5 2466"/>
   </g>
-  <!-- <g id="zone4">
-    <path fill="transparent" stroke="black" stroke-width="20px" d="M 3275 0 v 1575 A 4225 4225 0 0 0 11725 1575 v -1575 Z"/>
-  </g> -->
+  <g id="zone4">
+    <path fill="transparent" stroke="black" stroke-width="20px" d="M 8750 0 v 1575 A 1250 1250 0 0 1 8377 2466 L 10480 4570 A 4225 4225 0 0 0 11725 1575 v -1575 Z"/>
+  </g>
   <g id="zone5"></g>
   <g id="zone6"></g>
   <g id="zone7"></g>
