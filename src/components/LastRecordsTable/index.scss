@@ -1,0 +1,15 @@
+.last-records {
+  margin-bottom: 16px;
+
+  &__table {
+    .date-cell {
+      color: #6e6e6e;
+      font-size: 12px;
+      width: 100%;
+    }
+
+    .action-cell {
+      padding: 6px;
+    }
+  }
+}

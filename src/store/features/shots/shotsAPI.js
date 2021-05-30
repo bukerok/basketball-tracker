@@ -17,3 +17,7 @@ export async function getAll() {
 export async function add(record) {
   return (await dbPromise).add(OBJ_NAME, record);
 };
+
+export async function remove(key) {
+  return (await dbPromise).delete(OBJ_NAME, key);
+};

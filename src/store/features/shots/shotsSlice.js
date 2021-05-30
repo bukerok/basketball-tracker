@@ -2,6 +2,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import {
   getAll,
   add,
+  remove,
 } from './shotsAPI';
 
 const initialState = {
@@ -41,6 +42,15 @@ export const addRecord = createAsyncThunk(
   },
 );
 
+export const removeRecord = createAsyncThunk(
+  'shots/removeRecord',
+  async (date) => {
+    await remove(date);
+
+    return date;
+  },
+);
+
 export const shotsSlice = createSlice({
   name: 'shots',
   initialState,
@@ -55,10 +65,21 @@ export const shotsSlice = createSlice({
       })
       .addCase(addRecord.fulfilled, (state, action) => {
         state.records.push(action.payload);
+      })
+      .addCase(removeRecord.fulfilled, (state, action) => {
+        state.records = state.records.filter(({ date }) => {
+          return date !== action.payload;
+        });
       });
   },
 });
 
 export const selectRecords = (state) => state.shots.records;
+
+export const selectLast5Records = (state) => {
+  const records = selectRecords(state);
+
+  return records.slice(0, 5);
+};
 
 export default shotsSlice.reducer;
