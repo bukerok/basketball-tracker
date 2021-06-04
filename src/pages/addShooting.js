@@ -5,7 +5,9 @@ import Button from '@material-ui/core/Button';
 
 import ZoneSelector from '../components/ZoneSelector';
 import ShotsInput from '../components/ShotsInput';
+import NotificationsPanel from '../components/NotificationsPanel';
 import { addRecord } from '../store/features/shots/shotsSlice';
+import { addError } from '../store/features/notifications/notificationsSlice';
 import {
   getRootLink,
   PAGES_ROOTS,
@@ -20,13 +22,13 @@ const AddShootingPage = () => {
 
   const addShootingRecord = () => {
     if (!zone) {
-      console.error('No zone selected.');
+      dispatch(addError('No zone selected.'));
 
       return;
     }
 
     if (!shots) {
-      console.error('No shots data.');
+      dispatch(addError('No shots data.'));
 
       return;
     }
@@ -38,7 +40,7 @@ const AddShootingPage = () => {
     } = shots;
 
     if (error) {
-      console.error(error);
+      dispatch(addError(error));
 
       return;
     }
@@ -67,6 +69,7 @@ const AddShootingPage = () => {
       >
         Add
       </Button>
+      <NotificationsPanel />
     </BaseTemplate>
   );
 };

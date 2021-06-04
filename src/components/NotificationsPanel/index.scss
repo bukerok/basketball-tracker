@@ -1,0 +1,12 @@
+.notifications-panel {
+  position: fixed;
+  right: 0;
+  bottom: 8px;
+  left: 0;
+
+  .notification {
+    box-sizing: border-box;
+    max-width: 409px;
+    margin: 8px auto 0;
+  }
+}
