@@ -27,7 +27,9 @@
   <g id="zone10">
     <path fill="transparent" stroke="black" stroke-width="20px" d="M 11725 0 V 1575 A 4225 4225 0 0 1 10918.5 4059 L 12962 5543 A 6750 6750 0 0 0 14100 2990 V 0 Z"/>
   </g>
-  <g id="zone11"></g>
+  <g id="zone11">
+    <path fill="transparent" stroke="black" stroke-width="20px" d="M 0 0 V 7024 L 2040 5543 A 6750 6750 0 0 1 900 2990 V 0 Z"/>
+  </g>
   <g id="zone12"></g>
   <g id="zone13"></g>
   <g id="zone14"></g>
