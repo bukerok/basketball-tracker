@@ -39,6 +39,9 @@
   <g id="zone14">
     <path fill="transparent" stroke="black" stroke-width="20px" d="M 9587 7995.5 L 10366 10392 A 9270.5 9270.5 0 0 0 15000 7024 L 12962 5543 A 6750 6750 0 0 1 9587 7995.5"/>
   </g>
+  <g id="zone15">
+    <path fill="transparent" stroke="black" stroke-width="20px" d="M 14100 0 V 2990 A 6750 6750 0 0 1 12962 5543 L 15000 7024 V 0 Z"/>
+  </g>
   <path fill="transparent" stroke="black" stroke-width="20px" d="M 900 0 V 2990 A 6750 6750 0 0 0 7500 8325 A 6750 6750 0 0 0 14100 2990 V 0"/>
   <g>
     <path fill="transparent" stroke="black" stroke-width="20px" d="M 5050 0 V 5800 h 4900 v -5800"/>
