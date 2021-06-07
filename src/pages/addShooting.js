@@ -55,10 +55,7 @@ const AddShootingPage = () => {
 
   return (
     <BaseTemplate>
-      <ZoneSelector
-        value={zone}
-        onChange={setZone}
-      />
+      <ZoneSelector onChange={setZone} />
       <ShotsInput
         onChange={setShots}
       />

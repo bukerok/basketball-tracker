@@ -6,6 +6,15 @@
 
   &__image {
     width: 100%;
-    margin-bottom: 16px;
+    color: var(--primary-main-color);
+    background-color: #F57C00;
+
+    & .disabled {
+      fill: rgba(120, 120, 120, 0.5);
+
+      &[data-zone="5"] {
+        stroke: rgba(120, 120, 120, 0.5);
+      }
+    }
   }
 }
