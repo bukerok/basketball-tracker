@@ -13,7 +13,7 @@ import { mapZoneToLabel } from '../../helpers/shooting';
 
 import './index.scss';
 
-export const LastRecordsTable = () => {
+export default function LastRecordsTable() {
   const dispatch = useDispatch();
   const rows = useSelector(selectLast5Records);
 

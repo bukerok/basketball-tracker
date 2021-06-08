@@ -5,7 +5,7 @@ import Button from '@material-ui/core/Button';
 
 import ZoneSelector from '../components/ZoneSelector';
 import ShotsInput from '../components/ShotsInput';
-import NotificationsPanel from '../components/NotificationsPanel';
+import NotificationsPanel from '../containers/NotificationsPanel';
 import { addRecord } from '../store/features/shots/shotsSlice';
 import { addError } from '../store/features/notifications/notificationsSlice';
 import {
