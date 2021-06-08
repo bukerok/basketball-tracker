@@ -1,13 +1,25 @@
-export const mapZoneToLabel = (zone) => {
-  let label = '';
+export const getZoneProp = (zone) => {
+  let prop;
 
   if (zone === 5) {
-    label = 'FT';
+    prop = 'ft';
   } else if (zone < 11) {
-    label = '2PT';
+    prop = '2pt';
   } else if (zone < 16){
-    label = '3PT';
+    prop = '3pt';
   }
 
-  return label;
+  if (!prop) {
+    throw new Error('Unknow zone.');
+  }
+
+  return prop;
+};
+
+export const mapZoneToLabel = (zone) => {
+  return {
+    ft: 'FT',
+    '2pt': '2PT',
+    '3pt': '3PT',
+  }[getZoneProp(zone)];
 };

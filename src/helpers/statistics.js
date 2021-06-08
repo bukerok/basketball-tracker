@@ -1,3 +1,5 @@
+import { getZoneProp } from './shooting';
+
 const calculateStat = ({
   score,
   attempts,
@@ -16,20 +18,10 @@ export const calculateStats = (records = []) => {
       score,
       attempts,
     } = record;
-    let selector;
+    const prop = getZoneProp(zone);
 
-    if (zone === 5) {
-      selector = 'ft';
-    } else if (zone < 11) {
-      selector = '2pt';
-    } else if (zone < 16){
-      selector = '3pt';
-    }
-
-    if (selector) {
-      acc[selector].score += score;
-      acc[selector].attempts += attempts;
-    }
+    acc[prop].score += score;
+    acc[prop].attempts += attempts;
 
     return acc;
   }), {
