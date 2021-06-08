@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux';
 
 import { selectRecords } from '../../store/features/shots/shotsSlice';
 import { calculateStats } from '../../helpers/statistics';
-import StatsPanel from '../StatsPanel';
+import StatsPanel from '../../components/StatsPanel';
 import { PAGES_ROOTS } from '../../helpers/navigation';
 
 import './index.scss';

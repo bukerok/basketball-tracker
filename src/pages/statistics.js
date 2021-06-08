@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
 
-import ShootingPanel from '../components/ShootingPanel';
+import ShootingPanel from '../containers/ShootingPanel';
 import { PAGES_ROOTS } from '../helpers/navigation';
 import { setupRecords } from '../store/features/shots/shotsSlice';
 import BaseTemplate from './baseTemplate';
