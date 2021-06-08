@@ -79,7 +79,8 @@ export const selectRecords = (state) => state.shots.records;
 export const selectLast5Records = (state) => {
   const records = selectRecords(state);
 
-  return records.slice(0, 5);
+  return records.slice(records.length - 5)
+    .reverse();
 };
 
 export default shotsSlice.reducer;
