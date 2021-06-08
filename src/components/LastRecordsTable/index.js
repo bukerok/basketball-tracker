@@ -49,7 +49,12 @@ export const LastRecordsTable = () => {
                 <TableCell className="date-cell">
                   {date.toLocaleString()}
                 </TableCell>
-                <TableCell align="right">{row.score} / {row.attempts}</TableCell>
+                <TableCell
+                  align="right"
+                  className="score-cell"
+                >
+                  {row.score} / {row.attempts}
+                </TableCell>
                 <TableCell className="action-cell">
                   <IconButton
                     size="small"
