@@ -1,7 +1,7 @@
-<svg viewBox="0 0 15000 12000" xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" stroke-width="15px">
-  <g fill="transparent" stroke="white" stroke-width="75px">
+<svg viewBox="0 0 15000 12000" xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" stroke-width="10px">
+  <g fill="transparent" stroke="white" stroke-width="100px">
     <path d="M 900 0 V 2990 A 6750 6750 0 0 0 7500 8325 A 6750 6750 0 0 0 14100 2990 V 0"/>
-    <path d="M 5050 0 V 5800 h 4900 v -5800"/>
+    <path d="M 5050 0 V 5800 h 4900 v -5800" fill="#d34619" />
     <path d="M 5700 5800 A 1800 1800 0 0 0 9300 5800"/>
     <path d="M 6250 1200 v 375 A 1250 1250 0 0 0 8750 1575 v -375"/>
   </g>
