@@ -9,6 +9,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from 'recharts';
+import Typography from '@material-ui/core/Typography';
 
 import { aggregateRecords } from '../../helpers/graph';
 import { selectRecords } from '../../store/features/shots/shotsSlice';
@@ -20,51 +21,59 @@ export default function ShotsStatsGraph() {
   const data = aggregateRecords(records);
 
   return (
-    <ResponsiveContainer
-      className="shots-stats-graph"
-      width="100%"
-      height={300}
-    >
-      <LineChart
-        data={data}
-        margin={{
-          top: 5,
-          right: 30,
-          left: 0,
-          bottom: 5,
-        }}
+    <div className="shots-stats-graph">
+      <Typography
+        variant="h6"
+        gutterBottom
       >
-        <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="date" />
-          <YAxis domain={[0, 100]} />
-          <Tooltip
-            formatter={(value, name, props) => {
-              return `${value.toFixed(2)}%`;
-            }}
-          />
-          <Legend />
-          <Line
-            connectNulls
-            type="monotone"
-            dataKey="FT"
-            stroke="#0288D1"
-            activeDot={{ r: 8 }}
-          />
-          <Line
-            connectNulls
-            type="monotone"
-            dataKey="2PT"
-            stroke="#7B1FA2"
-            activeDot={{ r: 8 }}
-          />
-          <Line
-            connectNulls
-            type="monotone"
-            dataKey="3PT"
-            stroke="#388E3C"
-            activeDot={{ r: 8 }}
-          />
-      </LineChart>
-    </ResponsiveContainer>
+        Shots Stats
+      </Typography>
+      <ResponsiveContainer
+        className="shots-stats-graph__graph"
+        width="100%"
+        height={200}
+      >
+        <LineChart
+          data={data}
+          margin={{
+            top: 5,
+            right: 30,
+            left: 0,
+            bottom: 5,
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="date" />
+            <YAxis domain={[0, 100]} />
+            <Tooltip
+              formatter={(value, name, props) => {
+                return `${value.toFixed(2)}%`;
+              }}
+            />
+            <Legend />
+            <Line
+              connectNulls
+              type="monotone"
+              dataKey="FT"
+              stroke="#0288D1"
+              activeDot={{ r: 8 }}
+            />
+            <Line
+              connectNulls
+              type="monotone"
+              dataKey="2PT"
+              stroke="#7B1FA2"
+              activeDot={{ r: 8 }}
+            />
+            <Line
+              connectNulls
+              type="monotone"
+              dataKey="3PT"
+              stroke="#388E3C"
+              activeDot={{ r: 8 }}
+            />
+        </LineChart>
+      </ResponsiveContainer>
+    </div>
   );
 };
