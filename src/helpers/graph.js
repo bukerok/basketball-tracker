@@ -1,4 +1,7 @@
-import { getZoneProp } from "./shooting";
+import {
+  getZoneProp,
+  PROP_TO_LABEL_MAP,
+} from './shooting';
 
 const calculateValue = (data) => {
   if (!data) {
@@ -41,9 +44,9 @@ export const aggregateRecords = (records) => {
   return result.map((record) => {
     return {
       date: record.date,
-      ft: calculateValue(record.ft),
-      '2pt': calculateValue(record['2pt']),
-      '3pt': calculateValue(record['3pt']),
+      [PROP_TO_LABEL_MAP.ft]: calculateValue(record.ft),
+      [PROP_TO_LABEL_MAP['2pt']]: calculateValue(record['2pt']),
+      [PROP_TO_LABEL_MAP['3pt']]: calculateValue(record['3pt']),
     };
   });
 };

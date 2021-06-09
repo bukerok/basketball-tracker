@@ -39,28 +39,28 @@ export default function ShotsStatsGraph() {
           <YAxis domain={[0, 100]} />
           <Tooltip
             formatter={(value, name, props) => {
-              return [value.toFixed(2), name.toUpperCase()];
+              return [`${value.toFixed(2)}%`];
             }}
           />
           <Legend />
           <Line
             connectNulls
             type="monotone"
-            dataKey="ft" s
-            troke="#0288D1"
+            dataKey="FT"
+            stroke="#0288D1"
             activeDot={{ r: 8 }}
           />
           <Line
             connectNulls
             type="monotone"
-            dataKey="2pt"
+            dataKey="2PT"
             stroke="#7B1FA2"
             activeDot={{ r: 8 }}
           />
           <Line
             connectNulls
             type="monotone"
-            dataKey="3pt"
+            dataKey="3PT"
             stroke="#388E3C"
             activeDot={{ r: 8 }}
           />

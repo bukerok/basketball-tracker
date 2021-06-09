@@ -16,10 +16,12 @@ export const getZoneProp = (zone) => {
   return prop;
 };
 
+export const PROP_TO_LABEL_MAP = {
+  ft: 'FT',
+  '2pt': '2PT',
+  '3pt': '3PT',
+};
+
 export const mapZoneToLabel = (zone) => {
-  return {
-    ft: 'FT',
-    '2pt': '2PT',
-    '3pt': '3PT',
-  }[getZoneProp(zone)];
+  return PROP_TO_LABEL_MAP[getZoneProp(zone)];
 };
