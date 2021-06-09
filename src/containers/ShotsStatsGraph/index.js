@@ -36,7 +36,7 @@ export default function ShotsStatsGraph() {
       >
         <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="date" />
-          <YAxis />
+          <YAxis domain={[0, 100]} />
           <Tooltip
             formatter={(value, name, props) => {
               return [value.toFixed(2), name.toUpperCase()];
