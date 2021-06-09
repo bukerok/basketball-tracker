@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.6110a904.chunk.css",
-    "main.js": "/static/js/main.639831fb.chunk.js",
-    "main.js.map": "/static/js/main.639831fb.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.6db6068c.js",
-    "runtime-main.js.map": "/static/js/runtime-main.6db6068c.js.map",
-    "static/js/2.001b4e29.chunk.js": "/static/js/2.001b4e29.chunk.js",
-    "static/js/2.001b4e29.chunk.js.map": "/static/js/2.001b4e29.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.6110a904.chunk.css.map": "/static/css/main.6110a904.chunk.css.map",
-    "static/js/2.001b4e29.chunk.js.LICENSE.txt": "/static/js/2.001b4e29.chunk.js.LICENSE.txt",
-    "static/media/zones.8673cdce.svg": "/static/media/zones.8673cdce.svg"
+    "main.css": "/basketball-tracker/static/css/main.6110a904.chunk.css",
+    "main.js": "/basketball-tracker/static/js/main.700f3c37.chunk.js",
+    "main.js.map": "/basketball-tracker/static/js/main.700f3c37.chunk.js.map",
+    "runtime-main.js": "/basketball-tracker/static/js/runtime-main.ed0fb0a6.js",
+    "runtime-main.js.map": "/basketball-tracker/static/js/runtime-main.ed0fb0a6.js.map",
+    "static/js/2.001b4e29.chunk.js": "/basketball-tracker/static/js/2.001b4e29.chunk.js",
+    "static/js/2.001b4e29.chunk.js.map": "/basketball-tracker/static/js/2.001b4e29.chunk.js.map",
+    "index.html": "/basketball-tracker/index.html",
+    "static/css/main.6110a904.chunk.css.map": "/basketball-tracker/static/css/main.6110a904.chunk.css.map",
+    "static/js/2.001b4e29.chunk.js.LICENSE.txt": "/basketball-tracker/static/js/2.001b4e29.chunk.js.LICENSE.txt",
+    "static/media/zones.8673cdce.svg": "/basketball-tracker/static/media/zones.8673cdce.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6db6068c.js",
+    "static/js/runtime-main.ed0fb0a6.js",
     "static/js/2.001b4e29.chunk.js",
     "static/css/main.6110a904.chunk.css",
-    "static/js/main.639831fb.chunk.js"
+    "static/js/main.700f3c37.chunk.js"
   ]
 }
