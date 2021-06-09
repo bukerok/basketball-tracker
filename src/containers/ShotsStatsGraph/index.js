@@ -39,7 +39,7 @@ export default function ShotsStatsGraph() {
           <YAxis domain={[0, 100]} />
           <Tooltip
             formatter={(value, name, props) => {
-              return [`${value.toFixed(2)}%`];
+              return `${value.toFixed(2)}%`;
             }}
           />
           <Legend />
