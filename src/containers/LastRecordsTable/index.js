@@ -38,6 +38,16 @@ export default function LastRecordsTable() {
           </TableRow>
         </TableHead>
         <TableBody>
+          {rows.length === 0 &&
+            <TableRow className="last-records__no-data">
+              <TableCell
+                colSpan="4"
+                align="center"
+              >
+                No data.
+              </TableCell>
+            </TableRow>
+          }
           {rows.map((row) => {
             const date = new Date(row.date);
 

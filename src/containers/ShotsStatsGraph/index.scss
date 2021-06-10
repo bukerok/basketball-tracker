@@ -4,4 +4,12 @@
   &__graph {
     font-family: inherit;
   }
+
+  &__no-data {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray-100);
+  }
 }
