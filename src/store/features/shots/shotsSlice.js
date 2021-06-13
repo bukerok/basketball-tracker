@@ -79,7 +79,7 @@ export const selectRecords = (state) => state.shots.records;
 export const selectLast5Records = (state) => {
   const records = selectRecords(state);
 
-  return records.slice(records.length - 5)
+  return records.slice(Math.max(records.length - 5, 0))
     .reverse();
 };
 
