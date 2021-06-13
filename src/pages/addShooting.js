@@ -50,7 +50,12 @@ const AddShootingPage = () => {
       score,
       attempts,
     }));
-    history.push(getRootLink(PAGES_ROOTS.shooting));
+
+    if (history.legth !== 0) {
+      history.goBack();
+    } else {
+      history.replace(getRootLink(PAGES_ROOTS.shooting));
+    }
   };
 
   return (
