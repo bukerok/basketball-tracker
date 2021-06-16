@@ -1,6 +1,7 @@
 .zones-stats {
   &__zones {
     background-color: #ffcc66;
+    user-select: none;
   }
 
   .zone {
