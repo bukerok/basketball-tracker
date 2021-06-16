@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/basketball-tracker/static/css/main.fb4798ea.chunk.css",
-    "main.js": "/basketball-tracker/static/js/main.09e44876.chunk.js",
-    "main.js.map": "/basketball-tracker/static/js/main.09e44876.chunk.js.map",
+    "main.css": "/basketball-tracker/static/css/main.df345c2b.chunk.css",
+    "main.js": "/basketball-tracker/static/js/main.bb9fe12f.chunk.js",
+    "main.js.map": "/basketball-tracker/static/js/main.bb9fe12f.chunk.js.map",
     "runtime-main.js": "/basketball-tracker/static/js/runtime-main.ed0fb0a6.js",
     "runtime-main.js.map": "/basketball-tracker/static/js/runtime-main.ed0fb0a6.js.map",
-    "static/js/2.001b4e29.chunk.js": "/basketball-tracker/static/js/2.001b4e29.chunk.js",
-    "static/js/2.001b4e29.chunk.js.map": "/basketball-tracker/static/js/2.001b4e29.chunk.js.map",
+    "static/js/2.5fc97c57.chunk.js": "/basketball-tracker/static/js/2.5fc97c57.chunk.js",
+    "static/js/2.5fc97c57.chunk.js.map": "/basketball-tracker/static/js/2.5fc97c57.chunk.js.map",
     "index.html": "/basketball-tracker/index.html",
-    "static/css/main.fb4798ea.chunk.css.map": "/basketball-tracker/static/css/main.fb4798ea.chunk.css.map",
-    "static/js/2.001b4e29.chunk.js.LICENSE.txt": "/basketball-tracker/static/js/2.001b4e29.chunk.js.LICENSE.txt",
-    "static/media/zones.9161c959.svg": "/basketball-tracker/static/media/zones.9161c959.svg"
+    "static/css/main.df345c2b.chunk.css.map": "/basketball-tracker/static/css/main.df345c2b.chunk.css.map",
+    "static/js/2.5fc97c57.chunk.js.LICENSE.txt": "/basketball-tracker/static/js/2.5fc97c57.chunk.js.LICENSE.txt",
+    "static/media/zones.25742149.svg": "/basketball-tracker/static/media/zones.25742149.svg",
+    "static/media/zones.9131f58c.svg": "/basketball-tracker/static/media/zones.9131f58c.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.ed0fb0a6.js",
-    "static/js/2.001b4e29.chunk.js",
-    "static/css/main.fb4798ea.chunk.css",
-    "static/js/main.09e44876.chunk.js"
+    "static/js/2.5fc97c57.chunk.js",
+    "static/css/main.df345c2b.chunk.css",
+    "static/js/main.bb9fe12f.chunk.js"
   ]
 }

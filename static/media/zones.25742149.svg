@@ -5,9 +5,8 @@
     <path d="M 5700 5800 A 1800 1800 0 0 0 9300 5800"/>
     <path d="M 6250 1200 v 375 A 1250 1250 0 0 0 8750 1575 v -375"/>
   </g>
-  <g data-type="zone" data-zone="1" transform="translate(6250, 0)">
-    <path d="M 0 0 v 1575 A 1250 1250 0 0 0 2500 1575 v -1575 Z"/>
-    <text>TEST</text>
+  <g data-type="zone" data-zone="1">
+    <path d="M 6250 0 v 1575 A 1250 1250 0 0 0 8750 1575 v -1575 Z"/>
   </g>
   <g data-type="zone" data-zone="2">
     <path d="M 3275 0 v 1575 A 4225 4225 0 0 0 4785 4808 L 6696 2526 A 1250 1250 0 0 1 6250 1575 v -1575 Z"/>
@@ -49,10 +48,10 @@
     <path d="M 14100 0 V 2990 A 6750 6750 0 0 1 12962 5543 L 15000 7024 V 0 Z"/>
   </g>
   <g data-type="zone" data-zone="5" fill="white" stroke="white">
-    <rect x="380" y="10025" width="1500" height="1500" />
+    <rect x="380" y="10025" width="2500" height="1500" />
     <line x1="1130" x2="5200" y1="10025" y2="5800" />
     <path stroke-width="150px" d="M 5200 5800 h 4600"/>
     <line x1="13870" x2="9800" y1="10025" y2="5800" />
-    <rect x="13120" y="10025" width="1500" height="1500" />
+    <rect x="12120" y="10025" width="2500" height="1500" />
   </g>
 </svg>
