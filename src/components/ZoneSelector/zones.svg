@@ -48,10 +48,10 @@
     <path d="M 14100 0 V 2990 A 6750 6750 0 0 1 12962 5543 L 15000 7024 V 0 Z"/>
   </g>
   <g data-type="zone" data-zone="5" fill="white" stroke="white">
-    <rect x="380" y="10025" width="1500" height="1500" />
+    <rect x="380" y="10025" width="2500" height="1500" />
     <line x1="1130" x2="5200" y1="10025" y2="5800" />
     <path stroke-width="150px" d="M 5200 5800 h 4600"/>
     <line x1="13870" x2="9800" y1="10025" y2="5800" />
-    <rect x="13120" y="10025" width="1500" height="1500" />
+    <rect x="12120" y="10025" width="2500" height="1500" />
   </g>
 </svg>

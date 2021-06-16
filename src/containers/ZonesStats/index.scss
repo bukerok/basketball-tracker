@@ -1,0 +1,19 @@
+.zones-stats {
+  &__zones {
+    background-color: #ffcc66;
+  }
+
+  .zone {
+    &_low {
+      fill: rgba(255, 0, 0, 0.4);
+    }
+
+    &_medium {
+      fill: rgba(255, 251, 0, 0.4);
+    }
+
+    &_high {
+      fill: rgba(44, 226, 27, 0.4);
+    }
+  }
+}

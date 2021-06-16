@@ -1,0 +1,238 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 15000 11800"
+  fill="transparent"
+  stroke="currentColor"
+  stroke-width="3px"
+>
+  <g fill="transparent" stroke="rgba(255, 255, 255, 0.7)" stroke-width="100px">
+    <path d="M 900 0 V 2990 A 6750 6750 0 0 0 7500 8325 A 6750 6750 0 0 0 14100 2990 V 0"/>
+    <path d="M 5050 0 V 5800 h 4900 v -5800" />
+    <path d="M 5700 5800 A 1800 1800 0 0 0 9300 5800"/>
+    <path d="M 6250 1200 v 375 A 1250 1250 0 0 0 8750 1575 v -375"/>
+  </g>
+  <g data-type="zone" data-zone="1" transform="translate(6250, 0)">
+    <svg viewBox="0 0 2500 2825" width="2500" height="2825">
+      <path d="M 0 0 v 1575 A 1250 1250 0 0 0 2500 1575 v -1575 Z"/>
+      <text
+        text-anchor="middle"
+        x="50%"
+        y="50%"
+        font-size="700px"
+        fill="rebeccapurple"
+        stroke="transparent"
+      >
+      </text>
+    </svg>
+  </g>
+  <g data-type="zone" data-zone="2" transform="translate(3275, 0)">
+    <svg viewBox="0 0 3421 4808" width="3421" height="4808">
+      <path d="M 0 0 v 1575 A 4225 4225 0 0 0 1510 4808 L 3421 2526 A 1250 1250 0 0 1 2975 1575 v -1575 Z"/>
+      <text
+        text-anchor="middle"
+        x="50%"
+        y="50%"
+        font-size="700px"
+        fill="rebeccapurple"
+        stroke="transparent"
+      >
+      </text>
+    </svg>
+  </g>
+  <g data-type="zone" data-zone="3" transform="translate(4785, 2526)">
+    <svg viewBox="0 0 5431 3300" width="5431" height="3300">
+      <path d="M 1911 0 L 0 2282 A 4225 4225 0 0 0 5431 2282 L 3519 0 A 1250 1250 0 0 1 1911 0"/>
+      <text
+        text-anchor="middle"
+        x="50%"
+        y="70%"
+        font-size="700px"
+        fill="rebeccapurple"
+        stroke="transparent"
+      >
+      </text>
+    </svg>
+  </g>
+  <g data-type="zone" data-zone="4" transform="translate(8304, 0)">
+    <svg viewBox="0 0 3421 4808" width="3421" height="4808">
+      <path d="M 446 0 v 1575 A 1250 1250 0 0 1 0 2526 L 1912 4808 A 4225 4225 0 0 0 3421 1575 v -1575 Z"/>
+      <text
+        text-anchor="middle"
+        x="50%"
+        y="50%"
+        font-size="700px"
+        fill="rebeccapurple"
+        stroke="transparent"
+      >
+      </text>
+    </svg>
+  </g>
+  <g data-type="zone" data-zone="6" transform="translate(900, 0)">
+    <svg viewBox="0 0 3182 5543" width="3182" height="5543">
+      <path d="M 0 0 V 2990 A 6750 6750 0 0 0 1140 5543 L 3182 4059 A 4225 4225 0 0 1 2375 1575 V 0 Z"/>
+      <text
+        text-anchor="middle"
+        x="40%"
+        y="60%"
+        font-size="700px"
+        fill="rebeccapurple"
+        stroke="transparent"
+      >
+      </text>
+    </svg>
+  </g>
+  <g data-type="zone" data-zone="7" transform="translate(2040, 4059)">
+    <svg viewBox="0 0 4156 3936.5" width="4156" height="3936.5">
+      <path d="M 2042 0 L 0 1484 A 6750 6750 0 0 0 3376 3936.5 L 4156 1535 A 4225 4225 0 0 1 2042 0"/>
+      <text
+        text-anchor="middle"
+        x="50%"
+        y="60%"
+        font-size="700px"
+        fill="rebeccapurple"
+        stroke="transparent"
+      >
+      </text>
+    </svg>
+  </g>
+  <g data-type="zone" data-zone="8" transform="translate(5416, 5594)">
+    <svg  viewBox="0 0 4171 2731" width="4171" height="2731">
+      <path d="M 780 0 L 0 2401.5 A 6750 6750 0 0 0 4171 2401.5 L 3390 0 A 4225 4225 0 0 1 780 0"/>
+      <text
+        text-anchor="middle"
+        x="50%"
+        y="75%"
+        font-size="700px"
+        fill="rebeccapurple"
+        stroke="transparent"
+      >
+      </text>
+    </svg>
+  </g>
+  <g data-type="zone" data-zone="9" transform="translate(8806, 4059)">
+    <svg viewBox="0 0 4156 3936.5" width="4156" height="3936.5">
+      <path d="M 0 1535 L 781 3936.5 A 6750 6750 0 0 0 4156 1484 L 2112.5 0 A 4225 4225 0 0 1 0 1535"/>
+      <text
+        text-anchor="middle"
+        x="50%"
+        y="60%"
+        font-size="700px"
+        fill="rebeccapurple"
+        stroke="transparent"
+      >
+      </text>
+    </svg>
+  </g>
+  <g data-type="zone" data-zone="10" transform="translate(10918.5, 0)">
+    <svg viewBox="0 0 3181.5 5543" width="3181.5" height="5543">
+      <path d="M 806.5 0 V 1575 A 4225 4225 0 0 1 0 4059 L 2043.5 5543 A 6750 6750 0 0 0 3181.5 2990 V 0 Z"/>
+      <text
+        text-anchor="middle"
+        x="60%"
+        y="60%"
+        font-size="700px"
+        fill="rebeccapurple"
+        stroke="transparent"
+      >
+      </text>
+    </svg>
+  </g>
+  <g data-type="zone" data-zone="11">
+    <svg viewBox="0 0 5543 7024" width="5543" height="7024">
+      <path d="M 0 0 V 7024 L 2040 5543 A 6750 6750 0 0 1 900 2990 V 0 Z"/>
+      <text
+        text-anchor="middle"
+        x="15%"
+        y="80%"
+        font-size="600px"
+        fill="rebeccapurple"
+        stroke="transparent"
+      >
+      </text>
+    </svg>
+  </g>
+  <g data-type="zone" data-zone="12" transform="translate(0, 5543)">
+    <svg viewBox="0 0 5416 4849" width="5416" height="4849">
+      <path d="M 2040 0 L 0 1481 A 9270.5 9270.5 0 0 0 4637 4849 L 5416 2452 A 6750 6750 0 0 1 2040 0"/>
+      <text
+        text-anchor="middle"
+        x="55%"
+        y="60%"
+        font-size="700px"
+        fill="rebeccapurple"
+        stroke="transparent"
+      >
+      </text>
+    </svg>
+  </g>
+  <g data-type="zone" data-zone="13" transform="translate(4637, 7995.5)">
+    <svg viewBox="0 0 5729 2900" width="5729" height="2900">
+      <path d="M 779 0 L 0 2396.5 A 9270.5 9270.5 0 0 0 5729 2396.5 L 4950 0 A 6750 6750 0 0 1 779 0"/>
+      <text
+        text-anchor="middle"
+        x="50%"
+        y="60%"
+        font-size="700px"
+        fill="rebeccapurple"
+        stroke="transparent"
+      >
+      </text>
+    </svg>
+  </g>
+  <g data-type="zone" data-zone="14" transform="translate(9587, 5543)">
+    <svg viewBox="0 0 5413 4849" width="5413" height="4849">
+      <path d="M 0 2452.5 L 779 4849 A 9270.5 9270.5 0 0 0 5413 1481 L 3375 0 A 6750 6750 0 0 1 0 2452.5"/>
+      <text
+        text-anchor="middle"
+        x="50%"
+        y="60%"
+        font-size="700px"
+        fill="rebeccapurple"
+        stroke="transparent"
+      >
+      </text>
+    </svg>
+  </g>
+  <g data-type="zone" data-zone="15" transform="translate(12962, 0)">
+    <svg viewBox="0 0 2038 7024" width="2038" height="7024">
+      <path d="M 1138 0 V 2990 A 6750 6750 0 0 1 0 5543 L 2038 7024 V 0 Z"/>
+      <text
+        text-anchor="middle"
+        x="60%"
+        y="80%"
+        font-size="600px"
+        fill="rebeccapurple"
+        stroke="transparent"
+      >
+      </text>
+    </svg>
+  </g>
+  <g data-type="zone" data-zone="5" fill="white" stroke="white" transform="translate(380, 5700)">
+    <svg viewBox="0 0 14240 5725" width="14240" height="5725">
+      <rect x="0" y="4225" width="2500" height="1500" />
+      <line x1="750" x2="4820" y1="4225" y2="100" stroke-width="20px" />
+      <path stroke-width="200px" d="M 4820 100 h 4600"/>
+      <line x1="13490" x2="9420" y1="4225" y2="100" stroke-width="20px" />
+      <rect x="11740" y="4225" width="2500" height="1500" />
+      <line x1="2500" x2="11740" y1="5725" y2="5725" stroke-width="40px" />
+      <text
+        text-anchor="middle"
+        x="9%"
+        y="92%"
+        font-size="700px"
+        fill="rebeccapurple"
+        stroke="transparent"
+      >
+      </text>
+      <text
+        text-anchor="middle"
+        x="91%"
+        y="92%"
+        font-size="700px"
+        fill="rebeccapurple"
+        stroke="transparent"
+      >
+      </text>
+    </svg>
+  </g>
+</svg>

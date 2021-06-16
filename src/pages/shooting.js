@@ -5,6 +5,7 @@ import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
 
 import ShotsStatsGraph from '../containers/ShotsStatsGraph';
+import ZonesStats from '../containers/ZonesStats';
 import LastRecordsTable from '../containers/LastRecordsTable';
 import { PAGES_ROOTS } from '../helpers/navigation';
 import { setupRecords } from '../store/features/shots/shotsSlice';
@@ -19,6 +20,7 @@ const ShootingPage = () => {
 
   return (
     <BaseTemplate>
+      <ZonesStats />
       <ShotsStatsGraph />
       <LastRecordsTable />
       <Fab

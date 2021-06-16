@@ -45,3 +45,28 @@ export const calculateStats = (records = []) => {
     '3pt': calculateStat(aggregated['3pt']),
   };
 };
+
+export const calculateZoneStats = (records = []) => {
+  const aggregated = records.reduce((acc, record) => {
+    const {
+      zone,
+      score,
+      attempts,
+    } = record;
+    let accData = acc[zone];
+
+    if (!accData) {
+      acc[zone] = {
+        score,
+        attempts,
+      };
+    } else {
+      accData.score += score;
+      accData.attempts += attempts;
+    }
+
+    return acc;
+  }, {});
+
+  return aggregated;
+};
