@@ -2,7 +2,7 @@ import { calculateStats } from './statistics';
 
 describe('statistics helper', () => {
   describe('calculateStats', () => {
-    it('should calculate value', () => {
+    it('should accumulate values from same category', () => {
       const mockRecords = [
         {
           date: 'mockDate',
@@ -13,16 +13,22 @@ describe('statistics helper', () => {
         {
           date: 'mockDate2',
           zone: 4,
-          score: 5,
-          attempts: 11,
+          score: 3,
+          attempts: 7,
         },
       ];
 
-      expect(calculateStats(mockRecords)['2pt']).toBe(50);
+      expect(calculateStats(mockRecords)['2pt']).toStrictEqual({
+        score: 10,
+        attempts: 20,
+      });
     });
 
-    it('should return null if no values for shots category', () => {
-      expect(calculateStats([]).ft).toBe(null);
+    it('should return zeros if no values for shots category', () => {
+      expect(calculateStats([]).ft).toStrictEqual({
+        score: 0,
+        attempts: 0,
+      });
     });
   });
 });
