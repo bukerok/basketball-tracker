@@ -1,10 +1,33 @@
+import {
+  useEffect,
+  useRef,
+} from 'react';
+
 import { ReactComponent as Zones } from './zones.svg';
 
 import './index.scss';
 
 export default function ZoneSelector({
-  onChange,
+  activeZone,
+  onChange = () => {},
 }) {
+  const svgRef = useRef(null);
+
+  useEffect(() => {
+    svgRef.current.querySelectorAll('g[data-type="zone"]')
+      .forEach((el) => {
+        const zone = +el.dataset.zone;
+
+        if (zone === activeZone) {
+          el.classList.remove('disabled');
+          el.classList.add('active');
+        } else {
+          el.classList.add('disabled');
+          el.classList.remove('active');
+        }
+      });
+  }, [activeZone]);
+
   const handleClick = (event) => {
     const group = event.target.parentNode;
 
@@ -12,23 +35,13 @@ export default function ZoneSelector({
       return;
     }
 
-    const { zone } = group.dataset;
-
-    group.parentNode.querySelectorAll('g[data-type="zone"]')
-      .forEach((el) => {
-        if (el.dataset.zone === zone) {
-          el.classList.remove('disabled');
-        } else {
-          el.classList.add('disabled');
-        }
-      });
-
-    onChange(+zone);
+    onChange(+group.dataset.zone);
   };
 
   return (
     <div className="zone-selector">
       <Zones
+        ref={svgRef}
         className="zone-selector__image"
         onClick={handleClick}
       />

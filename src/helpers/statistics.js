@@ -1,10 +1,21 @@
 import { getZoneProp } from './shooting';
 
-const calculateStat = ({
+export const formatStat = (data) => {
+  const value = calculateStat(data);
+
+  return value == null ?
+    '-' :
+    `${value.toFixed(2)}%`;
+};
+
+export const calculateStat = ({
   score,
   attempts,
-}) => {
-  if (attempts === 0) {
+} = {}) => {
+  if (
+    attempts == null
+    || attempts === 0
+  ) {
     return null;
   }
 
@@ -39,11 +50,7 @@ export const calculateStats = (records = []) => {
     },
   });
 
-  return {
-    ft: calculateStat(aggregated.ft),
-    '2pt': calculateStat(aggregated['2pt']),
-    '3pt': calculateStat(aggregated['3pt']),
-  };
+  return aggregated;
 };
 
 export const calculateZoneStats = (records = []) => {

@@ -7,7 +7,7 @@
   &__image {
     width: 100%;
     color: var(--primary-main-color);
-    background-color: #ffcc66;
+    background-color: var(--playground-color);
 
     & .disabled {
       fill: rgba(120, 120, 120, 0.5);

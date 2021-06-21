@@ -1,17 +1,11 @@
 import { useSelector } from 'react-redux';
 
 import { selectRecords } from '../../store/features/shots/shotsSlice';
-import { calculateStats } from '../../helpers/statistics';
+import { calculateStats, formatStat } from '../../helpers/statistics';
 import StatsPanel from '../../components/StatsPanel';
 import { PAGES_ROOTS } from '../../helpers/navigation';
 
 import './index.scss';
-
-const formatStat = (value) => {
-  return value == null ?
-    '-' :
-    `${value.toFixed(2)}%`;
-};
 
 export default function ShootingPanel() {
   const records = useSelector(selectRecords);

@@ -2,14 +2,7 @@ import {
   getZoneProp,
   PROP_TO_LABEL_MAP,
 } from './shooting';
-
-const calculateValue = (data) => {
-  if (!data) {
-    return null;
-  }
-
-  return data.score / data.attempts * 100;
-};
+import { calculateStat } from './statistics';
 
 export const aggregateRecords = (records) => {
   const result = [];
@@ -44,9 +37,9 @@ export const aggregateRecords = (records) => {
   return result.map((record) => {
     return {
       date: record.date,
-      [PROP_TO_LABEL_MAP.ft]: calculateValue(record.ft),
-      [PROP_TO_LABEL_MAP['2pt']]: calculateValue(record['2pt']),
-      [PROP_TO_LABEL_MAP['3pt']]: calculateValue(record['3pt']),
+      [PROP_TO_LABEL_MAP.ft]: calculateStat(record.ft),
+      [PROP_TO_LABEL_MAP['2pt']]: calculateStat(record['2pt']),
+      [PROP_TO_LABEL_MAP['3pt']]: calculateStat(record['3pt']),
     };
   });
 };

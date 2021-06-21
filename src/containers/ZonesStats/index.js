@@ -1,7 +1,11 @@
-import { useEffect } from 'react';
+import {
+  useEffect,
+  useState,
+} from 'react';
 import { useSelector } from 'react-redux';
 
-import { calculateZoneStats } from '../../helpers/statistics';
+import ZoneStatsSheet from '../../components/ZoneStatsSheet';
+import { calculateStat, calculateZoneStats } from '../../helpers/statistics';
 import { selectRecords } from '../../store/features/shots/shotsSlice';
 import { ReactComponent as Zones} from './zones.svg';
 
@@ -20,6 +24,7 @@ const getZoneClass = (value) => {
 }
 
 export default function ZonesStats() {
+  const [drawerData, setDrawerData] = useState();
   const data = calculateZoneStats(useSelector(selectRecords));
 
   useEffect(() => {
@@ -37,7 +42,7 @@ export default function ZonesStats() {
       const value = data[zone.dataset.zone];
 
       if (value) {
-        const v = value.score / value.attempts * 100;
+        const v = calculateStat(value);
         const textV = `${v.toFixed(2)}%`;
 
         text.forEach((t) => {
@@ -53,9 +58,36 @@ export default function ZonesStats() {
     });
   }, [data]);
 
+  const handleClick = (event) => {
+    const group = event.target.parentNode.parentNode;
+
+    if (group.dataset.type !== 'zone') {
+      return;
+    }
+
+    const { zone } = group.dataset;
+    const zoneValue = +zone;
+
+    setDrawerData({
+      zone: zoneValue,
+      ...data[zoneValue],
+    });
+  };
+  const handleZonesStatsClose = () => {
+    setDrawerData();
+  };
+
   return (
     <div className="zones-stats">
-      <Zones className="zones-stats__zones" />
+      <Zones
+        className="zones-stats__zones"
+        onClick={handleClick}
+      />
+      <ZoneStatsSheet
+        data={drawerData}
+        opened={!!drawerData}
+        onClose={handleZonesStatsClose}
+      />
     </div>
   );
 };

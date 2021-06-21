@@ -17,7 +17,7 @@ import BaseTemplate from './baseTemplate';
 const AddShootingPage = () => {
   const history = useHistory();
   const dispatch = useDispatch();
-  const [zone, setZone] = useState(1);
+  const [zone, setZone] = useState(null);
   const [shots, setShots] = useState(null);
 
   const addShootingRecord = () => {
@@ -60,7 +60,10 @@ const AddShootingPage = () => {
 
   return (
     <BaseTemplate>
-      <ZoneSelector onChange={setZone} />
+      <ZoneSelector
+        activeZone={zone}
+        onChange={setZone}
+      />
       <ShotsInput
         onChange={setShots}
       />

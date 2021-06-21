@@ -1,0 +1,50 @@
+.zone-stats-sheet {
+  &__paper {
+    padding: 16px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  &__table {
+    max-width: 50%;
+
+    .MuiTableCell-head {
+      padding: 0;
+      border-bottom: none;
+    }
+
+    .MuiTableCell-root {
+      padding: 4px;
+      border-bottom: none;
+    }
+
+    .name-cell {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+    }
+
+    .value-cell {
+      font-weight: 500;
+    }
+  }
+
+  .zone-selector {
+    width: 150px;
+    margin-right: 24px;
+    background-color: var(--playground-color);
+
+    .disabled {
+      fill: transparent;
+    }
+
+    .active {
+      fill: rgba(25, 118, 210, 1);
+
+      &[data-zone="5"] {
+        stroke: rgba(25, 118, 210, 1);
+      }
+    }
+  }
+}
