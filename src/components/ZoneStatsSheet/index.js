@@ -27,7 +27,7 @@ export default function ZoneStatsSheet({
       value: mapZoneToLabel(data.zone),
     },
     {
-      name: 'Percent',
+      name: 'Accuracy',
       value: formatStat(data),
     },
     {
