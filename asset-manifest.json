@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/basketball-tracker/static/css/main.680f2f54.chunk.css",
+    "main.css": "/basketball-tracker/static/css/main.abeedf3d.chunk.css",
     "main.js": "/basketball-tracker/static/js/main.928f79dd.chunk.js",
     "main.js.map": "/basketball-tracker/static/js/main.928f79dd.chunk.js.map",
     "runtime-main.js": "/basketball-tracker/static/js/runtime-main.ed0fb0a6.js",
@@ -8,7 +8,7 @@
     "static/js/2.0c7b2201.chunk.js": "/basketball-tracker/static/js/2.0c7b2201.chunk.js",
     "static/js/2.0c7b2201.chunk.js.map": "/basketball-tracker/static/js/2.0c7b2201.chunk.js.map",
     "index.html": "/basketball-tracker/index.html",
-    "static/css/main.680f2f54.chunk.css.map": "/basketball-tracker/static/css/main.680f2f54.chunk.css.map",
+    "static/css/main.abeedf3d.chunk.css.map": "/basketball-tracker/static/css/main.abeedf3d.chunk.css.map",
     "static/js/2.0c7b2201.chunk.js.LICENSE.txt": "/basketball-tracker/static/js/2.0c7b2201.chunk.js.LICENSE.txt",
     "static/media/zones.25742149.svg": "/basketball-tracker/static/media/zones.25742149.svg",
     "static/media/zones.9131f58c.svg": "/basketball-tracker/static/media/zones.9131f58c.svg"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.ed0fb0a6.js",
     "static/js/2.0c7b2201.chunk.js",
-    "static/css/main.680f2f54.chunk.css",
+    "static/css/main.abeedf3d.chunk.css",
     "static/js/main.928f79dd.chunk.js"
   ]
 }
