@@ -31,8 +31,10 @@ export const calculateStats = (records = []) => {
     } = record;
     const prop = getZoneProp(zone);
 
-    acc[prop].score += score;
-    acc[prop].attempts += attempts;
+    if (prop) {
+      acc[prop].score += score;
+      acc[prop].attempts += attempts;
+    }
 
     return acc;
   }), {

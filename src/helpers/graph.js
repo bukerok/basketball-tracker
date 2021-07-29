@@ -12,6 +12,10 @@ export const aggregateRecords = (records) => {
     const recordDate = (new Date(record.date)).toLocaleDateString();
     const recordProp = getZoneProp(record.zone);
 
+    if (!recordProp) {
+      return;
+    }
+
     if (
       lastResult
       && lastResult.date === recordDate

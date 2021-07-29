@@ -9,10 +9,6 @@ export const getZoneProp = (zone) => {
     prop = '3pt';
   }
 
-  if (!prop) {
-    throw new Error('Unknow zone.');
-  }
-
   return prop;
 };
 
@@ -23,5 +19,5 @@ export const PROP_TO_LABEL_MAP = {
 };
 
 export const mapZoneToLabel = (zone) => {
-  return PROP_TO_LABEL_MAP[getZoneProp(zone)];
+  return PROP_TO_LABEL_MAP[getZoneProp(zone)] || '';
 };
