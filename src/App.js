@@ -13,6 +13,7 @@ import {
 import AddShootingPage from './pages/addShooting';
 import Shooting from './pages/shooting';
 import Statistics from './pages/statistics';
+import Debug from './pages/debug';
 
 function App() {
   return (
@@ -31,6 +32,10 @@ function App() {
           <Route
             path={getRootLink(PAGES_ROOTS.shooting)}
             component={Shooting}
+          />
+          <Route
+            path={getRootLink(PAGES_ROOTS.debug)}
+            component={Debug}
           />
           <Redirect to="/" />
         </Switch>
