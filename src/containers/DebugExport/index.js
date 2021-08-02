@@ -25,6 +25,7 @@ const DebugExport = () => {
       <Button
         className="debug-export__button"
         variant="contained"
+        color="primary"
         onClick={handleExportClick}
       >
         Export Data
