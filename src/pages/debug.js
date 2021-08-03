@@ -3,6 +3,7 @@ import Typography from '@material-ui/core/Typography';
 
 import DebugExport from '../containers/DebugExport';
 import DebugImport from '../containers/DebugImport';
+import NotificationsPanel from '../containers/NotificationsPanel';
 import BaseTemplate from './baseTemplate';
 
 const DebugPage = () => {
@@ -24,6 +25,7 @@ const DebugPage = () => {
       <DebugExport />
       <Divider />
       <DebugImport />
+      <NotificationsPanel />
     </BaseTemplate>
   );
 };

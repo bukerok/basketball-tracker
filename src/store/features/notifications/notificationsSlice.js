@@ -47,6 +47,20 @@ export const notificationsSlice = createSlice({
         };
       },
     },
+    addSuccess: {
+      reducer: (state, action) => {
+        state.notifications.push(action.payload);
+      },
+      prepare: (message) => {
+        return {
+          payload: {
+            message,
+            type: 'success',
+            id: nanoid(),
+          },
+        };
+      },
+    },
     remove: (state, action) => {
       state.notifications = state.notifications.filter((notification) => {
         return notification.id !== action.payload;
@@ -72,6 +86,7 @@ export const selectNotificaions = (state) => state.notifications.notifications;
 
 export const {
   addError,
+  addSuccess,
   remove,
 } = notificationsSlice.actions;
 
