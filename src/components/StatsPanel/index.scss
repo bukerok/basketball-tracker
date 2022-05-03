@@ -4,14 +4,19 @@
 
   &__header {
     padding-bottom: 0;
+    user-select: none;
   }
 
   &__info-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
-    .info__title {
-      font-weight: 500;
+    .info {
+      user-select: none;
+
+      &__title {
+        font-weight: 500;
+      }
     }
   }
 }
