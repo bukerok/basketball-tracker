@@ -1,4 +1,5 @@
 export const PAGES_ROOTS = {
+  homepage: '',
   shooting: 'shooting',
   addShooting: 'shooting/add',
   debug: 'debug',

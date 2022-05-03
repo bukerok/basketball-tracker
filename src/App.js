@@ -22,7 +22,7 @@ function App() {
         <Switch>
           <Route
             exact
-            path="/"
+            path={getRootLink(PAGES_ROOTS.homepage)}
             component={Statistics}
           />
           <Route
