@@ -23,7 +23,7 @@ export const calculateStat = ({
 };
 
 export const calculateStats = (records = []) => {
-  const aggregated = records.reduce(((acc, record) => {
+  return records.reduce(((acc, record) => {
     const {
       zone,
       score,
@@ -51,12 +51,10 @@ export const calculateStats = (records = []) => {
       attempts: 0,
     },
   });
-
-  return aggregated;
 };
 
 export const calculateZoneStats = (records = []) => {
-  const aggregated = records.reduce((acc, record) => {
+  return records.reduce((acc, record) => {
     const {
       zone,
       score,
@@ -76,6 +74,4 @@ export const calculateZoneStats = (records = []) => {
 
     return acc;
   }, {});
-
-  return aggregated;
 };
