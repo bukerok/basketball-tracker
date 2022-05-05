@@ -23,7 +23,10 @@ const StatisticsPage = () => {
         className="fab"
         color="primary"
         component={Link}
-        to={PAGES_ROOTS.addShooting}
+        to={{
+          pathname: PAGES_ROOTS.addShooting,
+          fromHomepage: true,
+        }}
       >
         <AddIcon />
       </Fab>

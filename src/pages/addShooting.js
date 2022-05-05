@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { useHistory } from 'react-router';
+import { useLocation, useHistory } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 
 import ZoneSelector from '../components/ZoneSelector';
@@ -16,6 +16,7 @@ import BaseTemplate from './baseTemplate';
 
 const AddShootingPage = () => {
   const history = useHistory();
+  const location = useLocation();
   const dispatch = useDispatch();
   const [zone, setZone] = useState(null);
   const [shots, setShots] = useState(null);
@@ -51,15 +52,17 @@ const AddShootingPage = () => {
       attempts,
     }));
 
-    if (history.legth !== 0) {
-      history.goBack();
-    } else {
-      history.replace(getRootLink(PAGES_ROOTS.shooting));
-    }
+    history.replace(getRootLink(PAGES_ROOTS.shooting));
   };
+  const backUrl = location.fromHomepage
+    ? getRootLink(PAGES_ROOTS.homepage)
+    : getRootLink(PAGES_ROOTS.shooting);
 
   return (
-    <BaseTemplate title="Add Zone Record">
+    <BaseTemplate
+      title="Add Zone Record"
+      backUrl={backUrl}
+    >
       <ZoneSelector
         activeZone={zone}
         onChange={setZone}
