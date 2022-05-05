@@ -9,13 +9,14 @@ body {
 
 .base-template {
   margin: 0 auto;
-  padding: 8px;
   max-width: 425px;
   height: 100vh;
   box-sizing: border-box;
-  position: relative;
-  display: flex;
-  flex-direction: column;
+
+  &__content {
+    position: relative;
+    padding: 8px;
+  }
 }
 
 .fab {

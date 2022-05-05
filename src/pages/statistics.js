@@ -17,7 +17,7 @@ const StatisticsPage = () => {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <BaseTemplate>
+    <BaseTemplate title="Homepage">
       <ShootingPanel />
       <Fab
         className="fab"

@@ -10,7 +10,7 @@ import BaseTemplate from './baseTemplate';
 
 const DebugPage = () => {
   return (
-    <BaseTemplate>
+    <BaseTemplate title="Debug">
       <Typography
         variant="h2"
         gutterBottom

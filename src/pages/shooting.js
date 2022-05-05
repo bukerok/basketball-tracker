@@ -19,7 +19,7 @@ const ShootingPage = () => {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <BaseTemplate>
+    <BaseTemplate title="Shooting">
       <ZonesStats />
       <ShotsStatsGraph />
       <LastRecordsTable />

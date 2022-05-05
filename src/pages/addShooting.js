@@ -59,7 +59,7 @@ const AddShootingPage = () => {
   };
 
   return (
-    <BaseTemplate>
+    <BaseTemplate title="Add Zone Record">
       <ZoneSelector
         activeZone={zone}
         onChange={setZone}
