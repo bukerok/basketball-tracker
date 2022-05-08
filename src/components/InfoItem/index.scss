@@ -1,0 +1,17 @@
+.info-item {
+  user-select: none;
+  text-align: center;
+  border: 1px solid #6c6c6c;
+  border-radius: 8px;
+  width: fit-content;
+  padding: 8px;
+
+  &__value {
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  &__title {
+    font-weight: 500;
+  }
+}

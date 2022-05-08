@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux';
 import { selectRecords } from '../../store/features/shots/shotsSlice';
 import { calculateStats, formatStat } from '../../helpers/statistics';
 import StatsPanel from '../../components/StatsPanel';
-import { PAGES_ROOTS } from '../../helpers/navigation';
 
 import './index.scss';
 
@@ -13,8 +12,6 @@ export default function ShootingPanel() {
 
   return (
     <StatsPanel
-      title="Shooting"
-      viewUrl={PAGES_ROOTS.shooting}
       items={[
         {
           name: 'FT',

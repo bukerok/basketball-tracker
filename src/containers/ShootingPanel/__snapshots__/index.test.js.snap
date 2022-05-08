@@ -2,103 +2,64 @@
 
 exports[`ShootingPanel renders correctly 1`] = `
 <div
-  className="MuiPaper-root MuiCard-root stats-panel MuiPaper-elevation1 MuiPaper-rounded"
+  className="stats-panel"
 >
+  <h4
+    className="MuiTypography-root stats-panel__title MuiTypography-h4"
+  >
+    Shooting
+  </h4>
   <div
-    className="MuiCardHeader-root stats-panel__header"
+    className="stats-panel__values"
   >
     <div
-      className="MuiCardHeader-content"
+      className="info-item"
     >
-      <h6
-        className="MuiTypography-root MuiTypography-h6"
-      >
-        Shooting
-      </h6>
-    </div>
-    <div
-      className="MuiCardHeader-action"
-    >
-      <a
-        aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root"
-        onBlur={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        role="button"
-        tabIndex={0}
-        to="shooting"
-      >
-        <span
-          className="MuiIconButton-label"
-        >
-          <svg
-            aria-hidden={true}
-            className="MuiSvgIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"
-            />
-          </svg>
-        </span>
-      </a>
-    </div>
-  </div>
-  <div
-    className="MuiCardContent-root stats-panel__info-container"
-  >
-    <div
-      className="info"
-    >
-      <h6
-        className="MuiTypography-root info__title MuiTypography-subtitle1"
-      >
-        FT
-      </h6>
       <p
-        className="MuiTypography-root MuiTypography-body1"
+        className="MuiTypography-root info-item__value MuiTypography-body1"
       >
         -
       </p>
+      <h6
+        className="MuiTypography-root info-item__title MuiTypography-subtitle1"
+      >
+        FT
+      </h6>
     </div>
     <div
-      className="info"
+      className="info-item"
     >
-      <h6
-        className="MuiTypography-root info__title MuiTypography-subtitle1"
-      >
-        2PT
-      </h6>
       <p
-        className="MuiTypography-root MuiTypography-body1"
+        className="MuiTypography-root info-item__value MuiTypography-body1"
       >
         50.00%
       </p>
+      <h6
+        className="MuiTypography-root info-item__title MuiTypography-subtitle1"
+      >
+        2PT
+      </h6>
     </div>
     <div
-      className="info"
+      className="info-item"
     >
-      <h6
-        className="MuiTypography-root info__title MuiTypography-subtitle1"
-      >
-        3PT
-      </h6>
       <p
-        className="MuiTypography-root MuiTypography-body1"
+        className="MuiTypography-root info-item__value MuiTypography-body1"
       >
         20.00%
       </p>
+      <h6
+        className="MuiTypography-root info-item__title MuiTypography-subtitle1"
+      >
+        3PT
+      </h6>
     </div>
   </div>
+  <a
+    className="stats-panel__link"
+    to="/shooting"
+  >
+    View details
+  </a>
 </div>
 `;

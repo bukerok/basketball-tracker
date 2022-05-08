@@ -1,36 +1,23 @@
-import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import Typography from '@material-ui/core/Typography';
-import Card from '@material-ui/core/Card';
-import CardHeader from '@material-ui/core/CardHeader';
-import CardContent from '@material-ui/core/CardContent';
-import IconButton from '@material-ui/core/IconButton';
-import ViewIcon from '@material-ui/icons/Visibility';
+
+import { getRootLink, PAGES_ROOTS } from '../../helpers/navigation';
+import InfoItem from '../InfoItem';
 
 import './index.scss';
 
 export default function StatsPanel({
-  title,
-  viewUrl,
   items = [],
 }) {
   return (
-    <Card className="stats-panel">
-      <CardHeader
-        className="stats-panel__header"
-        title={<Typography variant="h6">{title}</Typography>}
-        action={
-          <Fragment>
-            <IconButton
-              component={Link}
-              to={viewUrl}
-            >
-              <ViewIcon />
-            </IconButton>
-          </Fragment>
-        }
-      />
-      <CardContent className="stats-panel__info-container">
+    <div className="stats-panel">
+      <Typography
+        variant="h4"
+        className="stats-panel__title"
+      >
+        Shooting
+      </Typography>
+      <div className="stats-panel__values">
         {items.map((item) => {
           const {
             name,
@@ -38,19 +25,20 @@ export default function StatsPanel({
           } = item;
 
           return (
-            <div
-              className="info"
+            <InfoItem
               key={name}
-            >
-              <Typography
-                variant="subtitle1"
-                className="info__title"
-              >{name}</Typography>
-              <Typography variant="body1">{value}</Typography>
-            </div>
+              title={name}
+              value={value}
+            />
           );
         })}
-      </CardContent>
-    </Card>
+      </div>
+      <Link
+        className="stats-panel__link"
+        to={getRootLink(PAGES_ROOTS.shooting)}
+      >
+        View details
+      </Link>
+    </div>
   );
-};
+}
