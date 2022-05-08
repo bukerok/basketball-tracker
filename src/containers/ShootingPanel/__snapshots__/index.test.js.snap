@@ -57,7 +57,7 @@ exports[`ShootingPanel renders correctly 1`] = `
   </div>
   <a
     className="stats-panel__link"
-    to="/shooting"
+    to="/statistics"
   >
     View details
   </a>

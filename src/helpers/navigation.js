@@ -1,6 +1,6 @@
 export const PAGES_ROOTS = {
   homepage: '',
-  shooting: 'shooting',
+  statistics: 'statistics',
   addShooting: 'shooting/add',
   debug: 'debug',
 };

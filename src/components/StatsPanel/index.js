@@ -35,7 +35,7 @@ export default function StatsPanel({
       </div>
       <Link
         className="stats-panel__link"
-        to={getRootLink(PAGES_ROOTS.shooting)}
+        to={getRootLink(PAGES_ROOTS.statistics)}
       >
         View details
       </Link>

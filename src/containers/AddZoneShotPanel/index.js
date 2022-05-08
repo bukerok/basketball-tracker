@@ -41,7 +41,7 @@ const AddZoneShotPanel = () => {
       attempts,
     }));
 
-    history.replace(getRootLink(PAGES_ROOTS.shooting));
+    history.replace(getRootLink(PAGES_ROOTS.statistics));
   };
 
   return (

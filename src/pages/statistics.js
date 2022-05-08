@@ -1,15 +1,17 @@
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
 
-import ShootingPanel from '../containers/ShootingPanel';
-import { PAGES_ROOTS } from '../helpers/navigation';
+import ShotsStatsGraph from '../containers/ShotsStatsGraph';
+import ZonesStats from '../containers/ZonesStats';
+import LastRecordsTable from '../containers/LastRecordsTable';
+import { getRootLink, PAGES_ROOTS } from '../helpers/navigation';
 import { setupRecords } from '../store/features/shots/shotsSlice';
 import BaseTemplate from './baseTemplate';
 
-const StatisticsPage = () => {
+const ShootingPage = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -17,16 +19,18 @@ const StatisticsPage = () => {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <BaseTemplate title="Homepage">
-      <ShootingPanel />
+    <BaseTemplate
+      title="Shooting"
+      backUrl={getRootLink(PAGES_ROOTS.homepage)}
+    >
+      <ZonesStats />
+      <ShotsStatsGraph />
+      <LastRecordsTable />
       <Fab
         className="fab"
         color="primary"
         component={Link}
-        to={{
-          pathname: PAGES_ROOTS.addShooting,
-          fromHomepage: true,
-        }}
+        to={PAGES_ROOTS.addShooting}
       >
         <AddIcon />
       </Fab>
@@ -34,4 +38,4 @@ const StatisticsPage = () => {
   );
 };
 
-export default StatisticsPage;
+export default ShootingPage;

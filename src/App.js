@@ -11,9 +11,9 @@ import {
   getRootLink,
 } from './helpers/navigation';
 import AddShootingPage from './pages/addShooting';
-import Shooting from './pages/shooting';
 import Statistics from './pages/statistics';
 import Debug from './pages/debug';
+import Homepage from './pages/homepage';
 
 function App() {
   return (
@@ -23,15 +23,15 @@ function App() {
           <Route
             exact
             path={getRootLink(PAGES_ROOTS.homepage)}
-            component={Statistics}
+            component={Homepage}
           />
           <Route
             path={getRootLink(PAGES_ROOTS.addShooting)}
             component={AddShootingPage}
           />
           <Route
-            path={getRootLink(PAGES_ROOTS.shooting)}
-            component={Shooting}
+            path={getRootLink(PAGES_ROOTS.statistics)}
+            component={Statistics}
           />
           <Route
             path={getRootLink(PAGES_ROOTS.debug)}

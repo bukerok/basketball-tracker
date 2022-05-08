@@ -13,7 +13,7 @@ const AddShootingPage = () => {
 
   const backUrl = location.fromHomepage
     ? getRootLink(PAGES_ROOTS.homepage)
-    : getRootLink(PAGES_ROOTS.shooting);
+    : getRootLink(PAGES_ROOTS.statistics);
 
   return (
     <BaseTemplate
