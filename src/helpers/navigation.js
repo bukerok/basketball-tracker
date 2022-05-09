@@ -3,6 +3,8 @@ export const PAGES_ROOTS = {
   statistics: 'statistics',
   addShooting: 'shooting/add',
   debug: 'debug',
+  simpleTracker: 'trackers/simple-tracker',
+  zoneTracker: 'trackers/zone-tracker',
 };
 
 export const getRootLink = (pathname) => {

@@ -1,6 +1,7 @@
 .stats-panel {
   display: flex;
   flex-direction: column;
+  margin-bottom: 32px;
 
   &__title {
     padding-bottom: 0;
@@ -9,7 +10,7 @@
   }
 
   &__values {
-    margin-bottom: 16px;
+    margin-bottom: 24px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;

@@ -1,0 +1,11 @@
+.trackers-panel {
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
+  }
+
+  &__item {
+    text-decoration: none;
+  }
+}

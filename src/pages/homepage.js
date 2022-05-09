@@ -8,6 +8,7 @@ import ShootingPanel from '../containers/ShootingPanel';
 import { PAGES_ROOTS } from '../helpers/navigation';
 import { setupRecords } from '../store/features/shots/shotsSlice';
 import BaseTemplate from './baseTemplate';
+import TrackersPanel from '../containers/TrackersPanel';
 
 const Homepage = () => {
   const dispatch = useDispatch();
@@ -19,6 +20,7 @@ const Homepage = () => {
   return (
     <BaseTemplate title="Homepage">
       <ShootingPanel />
+      <TrackersPanel />
       <Fab
         className="fab"
         color="primary"
