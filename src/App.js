@@ -14,6 +14,7 @@ import AddShootingPage from './pages/addShooting';
 import Statistics from './pages/statistics';
 import Debug from './pages/debug';
 import Homepage from './pages/homepage';
+import ZoneTracker from './pages/zoneTracker';
 
 function App() {
   return (
@@ -36,6 +37,10 @@ function App() {
           <Route
             path={getRootLink(PAGES_ROOTS.debug)}
             component={Debug}
+          />
+          <Route
+            path={getRootLink(PAGES_ROOTS.zoneTracker)}
+            component={ZoneTracker}
           />
           <Redirect to="/" />
         </Switch>

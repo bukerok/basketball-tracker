@@ -12,6 +12,12 @@ const ZoneShotInput = ({
   const [zone, setZone] = useState(null);
   const [shots, setShots] = useState(null);
 
+  const handleAdd = () => {
+    onAdd(zone, shots);
+    setZone(null);
+    setShots(null);
+  };
+
   return (
     <div className="zone-shot-input">
       <ZoneSelector
@@ -19,13 +25,14 @@ const ZoneShotInput = ({
         onChange={setZone}
       />
       <ShotsInput
+        shots={shots}
         onChange={setShots}
       />
       <Button
         className="zone-shot-input__add-button"
         color="primary"
         variant="contained"
-        onClick={() => onAdd(zone, shots)}
+        onClick={handleAdd}
       >
         Add
       </Button>

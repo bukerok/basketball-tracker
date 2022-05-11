@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import TextField from '@material-ui/core/TextField';
 
@@ -28,10 +28,16 @@ const getValue = (score, attempts) => {
 };
 
 export default function ShotsInput({
+  shots,
   onChange,
 }) {
   const [score, setScore] = useState('');
   const [attempts, setAttempts] = useState('');
+
+  useEffect(() => {
+    setScore(shots?.score || '');
+    setAttempts(shots?.attempts || '');
+  }, [shots]);
 
   const handleScoreChange = (e) => {
     const value = parseInt(e.target.value) || '';

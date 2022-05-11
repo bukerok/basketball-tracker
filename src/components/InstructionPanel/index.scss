@@ -1,0 +1,19 @@
+.instruction-panel {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.instruction-popup {
+  margin: 16px;
+  width: calc(100% - 32px);
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__close {
+    padding: 0;
+  }
+}
