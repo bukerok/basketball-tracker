@@ -1,5 +1,3 @@
-import { useLocation } from 'react-router-dom';
-
 import AddZoneShotPanel from '../containers/AddZoneShotPanel';
 import NotificationsPanel from '../containers/NotificationsPanel';
 import {
@@ -9,16 +7,10 @@ import {
 import BaseTemplate from './baseTemplate';
 
 const AddShootingPage = () => {
-  const location = useLocation();
-
-  const backUrl = location.fromHomepage
-    ? getRootLink(PAGES_ROOTS.homepage)
-    : getRootLink(PAGES_ROOTS.statistics);
-
   return (
     <BaseTemplate
       title="Add Zone Record"
-      backUrl={backUrl}
+      backUrl={getRootLink(PAGES_ROOTS.homepage)}
     >
       <AddZoneShotPanel />
       <NotificationsPanel />
