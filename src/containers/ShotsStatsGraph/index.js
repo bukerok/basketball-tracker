@@ -49,7 +49,7 @@ export default function ShotsStatsGraph() {
               <XAxis dataKey="date" />
               <YAxis domain={[0, 100]} />
               <Tooltip
-                formatter={(value, name, props) => {
+                formatter={(value) => {
                   return `${value.toFixed(2)}%`;
                 }}
               />
