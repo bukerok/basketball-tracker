@@ -1,23 +1,23 @@
 import InstructionPanel from '../components/InstructionPanel';
-import ZoneTrackerInstruction from '../components/Instructions/ZoneTrackerInstruction';
-import AddZoneShotPanel from '../containers/AddZoneShotPanel';
+import SimpleTrackerInstruction from '../components/Instructions/SimpleTrackerInstruction';
+import AddSimpleShotPanel from '../containers/AddSimpleShotPanel';
 import NotificationsPanel from '../containers/NotificationsPanel';
 import { getRootLink, PAGES_ROOTS } from '../helpers/navigation';
 import BaseTemplate from './baseTemplate';
 
-const ZoneTracker = () => {
+const SimpleTracker = () => {
   return (
     <BaseTemplate
-      title="Zone Tracker"
+      title="Simple Tracker"
       backUrl={getRootLink(PAGES_ROOTS.homepage)}
     >
       <InstructionPanel
-        instruction={<ZoneTrackerInstruction />}
+        instruction={<SimpleTrackerInstruction />}
       />
-      <AddZoneShotPanel />
+      <AddSimpleShotPanel />
       <NotificationsPanel />
     </BaseTemplate>
   );
 };
 
-export default ZoneTracker;
+export default SimpleTracker;

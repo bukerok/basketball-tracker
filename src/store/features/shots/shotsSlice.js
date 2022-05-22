@@ -1,4 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+
+import { addError } from '../notifications/notificationsSlice';
 import {
   getAll,
   add,
@@ -8,6 +10,10 @@ import {
 const initialState = {
   records: [],
   status: 'idle',
+};
+
+export const noShotsError = () => (dispatch) => {
+  dispatch(addError('No shots data.'));
 };
 
 export const setupRecords = createAsyncThunk(

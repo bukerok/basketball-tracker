@@ -15,6 +15,7 @@ import Statistics from './pages/statistics';
 import Debug from './pages/debug';
 import Homepage from './pages/homepage';
 import ZoneTracker from './pages/zoneTracker';
+import SimpleTracker from './pages/simpleTracker';
 
 function App() {
   return (
@@ -41,6 +42,10 @@ function App() {
           <Route
             path={getRootLink(PAGES_ROOTS.zoneTracker)}
             component={ZoneTracker}
+          />
+          <Route
+            path={getRootLink(PAGES_ROOTS.simpleTracker)}
+            component={SimpleTracker}
           />
           <Redirect to="/" />
         </Switch>

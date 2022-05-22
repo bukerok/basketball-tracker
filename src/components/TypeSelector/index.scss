@@ -1,0 +1,30 @@
+.type-selector {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+
+  &__options {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  &__option {
+    padding: 8px;
+    margin: 3px;
+    width: 75px;
+
+    .MuiTypography-root {
+      font-size: 32px;
+    }
+
+    .MuiButtonBase-root {
+      display: none;
+    }
+
+    &_active {
+      margin: 0;
+      border: 3px solid coral;
+      border-radius: 8px;
+    }
+  }
+}

@@ -1,19 +1,13 @@
 import { useDispatch } from 'react-redux';
 
-import ZoneShotInput from '../../components/ZoneShotInput';
+import SimpleShotInput from '../../components/SimpleShotInput';
 import { addError } from '../../store/features/notifications/notificationsSlice';
 import { addRecord, noShotsError } from '../../store/features/shots/shotsSlice';
 
-const AddZoneShotPanel = () => {
+const AddSimpleShotPanel = () => {
   const dispatch = useDispatch();
 
-  const handleAddZoneShot = (zone, shots) => {
-    if (!zone) {
-      dispatch(addError('No zone selected.'));
-
-      return;
-    }
-
+  const handleAdd = (type, shots) => {
     if (!shots) {
       dispatch(noShotsError());
 
@@ -33,15 +27,15 @@ const AddZoneShotPanel = () => {
     }
 
     dispatch(addRecord({
-      zone,
+      type,
       score,
       attempts,
     }));
   };
 
   return (
-    <ZoneShotInput onAdd={handleAddZoneShot}/>
+    <SimpleShotInput onAdd={handleAdd}/>
   );
 };
 
-export default AddZoneShotPanel;
+export default AddSimpleShotPanel;

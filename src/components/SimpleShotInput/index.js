@@ -1,28 +1,28 @@
 import { useState } from 'react';
 import Button from '@material-ui/core/Button';
 
+import TypeSelector from '../TypeSelector';
 import ShotsInput from '../ShotsInput';
-import ZoneSelector from '../ZoneSelector';
 
-import './index.scss';
+const DEFAULT_TYPE = '2pt';
 
-const ZoneShotInput = ({
+const SimpleShotInput = ({
   onAdd,
 }) => {
-  const [zone, setZone] = useState(null);
+  const [type, setType] = useState(DEFAULT_TYPE);
   const [shots, setShots] = useState(null);
 
   const handleAdd = () => {
-    setZone(null);
+    setType(DEFAULT_TYPE);
     setShots(null);
-    onAdd(zone, shots);
+    onAdd(type, shots);
   };
 
   return (
-    <div className="zone-shot-input">
-      <ZoneSelector
-        activeZone={zone}
-        onChange={setZone}
+    <div className="simple-shot-input">
+      <TypeSelector
+        value={type}
+        onChange={setType}
       />
       <ShotsInput
         shots={shots}
@@ -40,4 +40,4 @@ const ZoneShotInput = ({
   );
 };
 
-export default ZoneShotInput;
+export default SimpleShotInput;
