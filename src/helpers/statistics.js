@@ -1,3 +1,4 @@
+import { SHOT_TYPES } from './constants/shooting';
 import { getZoneProp } from './shooting';
 
 export const formatStat = (data) => {
@@ -38,15 +39,15 @@ export const calculateStats = (records = []) => {
 
     return acc;
   }), {
-    ft: {
+    [SHOT_TYPES.freeThrow]: {
       score: 0,
       attempts: 0,
     },
-    '2pt': {
+    [SHOT_TYPES.twoPoint]: {
       score: 0,
       attempts: 0,
     },
-    '3pt': {
+    [SHOT_TYPES.threePoint]: {
       score: 0,
       attempts: 0,
     },

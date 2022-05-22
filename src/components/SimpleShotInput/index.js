@@ -3,8 +3,9 @@ import Button from '@material-ui/core/Button';
 
 import TypeSelector from '../TypeSelector';
 import ShotsInput from '../ShotsInput';
+import { SHOT_TYPES } from '../../helpers/constants/shooting';
 
-const DEFAULT_TYPE = '2pt';
+const DEFAULT_TYPE = SHOT_TYPES.twoPoint;
 
 const SimpleShotInput = ({
   onAdd,

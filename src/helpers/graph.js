@@ -1,3 +1,4 @@
+import { SHOT_TYPES } from './constants/shooting';
 import {
   getZoneProp,
   PROP_TO_LABEL_MAP,
@@ -41,9 +42,9 @@ export const aggregateRecords = (records) => {
   return result.map((record) => {
     return {
       date: record.date,
-      [PROP_TO_LABEL_MAP.ft]: calculateStat(record.ft),
-      [PROP_TO_LABEL_MAP['2pt']]: calculateStat(record['2pt']),
-      [PROP_TO_LABEL_MAP['3pt']]: calculateStat(record['3pt']),
+      [PROP_TO_LABEL_MAP[SHOT_TYPES.freeThrow]]: calculateStat(record[SHOT_TYPES.freeThrow]),
+      [PROP_TO_LABEL_MAP[SHOT_TYPES.twoPoint]]: calculateStat(record[SHOT_TYPES.twoPoint]),
+      [PROP_TO_LABEL_MAP[SHOT_TYPES.threePoint]]: calculateStat(record[SHOT_TYPES.threePoint]),
     };
   });
 };

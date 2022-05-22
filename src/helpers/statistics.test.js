@@ -1,3 +1,4 @@
+import { SHOT_TYPES } from './constants/shooting';
 import {
   calculateStats,
   calculateStat,
@@ -22,14 +23,14 @@ describe('statistics helper', () => {
         },
       ];
 
-      expect(calculateStats(mockRecords)['2pt']).toStrictEqual({
+      expect(calculateStats(mockRecords)[SHOT_TYPES.twoPoint]).toStrictEqual({
         score: 10,
         attempts: 20,
       });
     });
 
     it('should return zeros if no values for shots category', () => {
-      expect(calculateStats([]).ft).toStrictEqual({
+      expect(calculateStats([])[SHOT_TYPES.freeThrow]).toStrictEqual({
         score: 0,
         attempts: 0,
       });
