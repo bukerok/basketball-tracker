@@ -1,6 +1,6 @@
 import { SHOT_TYPES } from './constants/shooting';
 
-export const getZoneProp = (zone) => {
+export const getZoneType = (zone) => {
   let prop;
 
   if (zone === 5) {
@@ -14,12 +14,12 @@ export const getZoneProp = (zone) => {
   return prop;
 };
 
-export const PROP_TO_LABEL_MAP = {
+export const TYPE_TO_LABEL_MAP = {
   [SHOT_TYPES.freeThrow]: 'FT',
   [SHOT_TYPES.twoPoint]: '2PT',
   [SHOT_TYPES.threePoint]: '3PT',
 };
 
 export const mapZoneToLabel = (zone) => {
-  return PROP_TO_LABEL_MAP[getZoneProp(zone)] || '';
+  return TYPE_TO_LABEL_MAP[getZoneType(zone)] || '';
 };

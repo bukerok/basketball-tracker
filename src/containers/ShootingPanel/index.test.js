@@ -1,28 +1,29 @@
 import renderer from 'react-test-renderer';
 
 import ShootingPanel from '.';
+import ZoneShot from '../../helpers/classes/ZoneShot';
+
+const mockShots = [
+  new ZoneShot({
+    zone: 12,
+    score: 3,
+    attempts: 15,
+  }),
+  new ZoneShot({
+    zone: 1,
+    score: 5,
+    attempts: 10,
+  }),
+];
 
 jest.mock('react-router-dom', () => ({
   Link: 'a',
 }));
 jest.mock('react-redux', () => ({
-  useSelector: () => [
-    {
-      date: 'mockDate',
-      zone: 12,
-      score: 3,
-      attempts: 15,
-    },
-    {
-      date: 'mockDate2',
-      zone: 1,
-      score: 5,
-      attempts: 10,
-    },
-  ],
+  useSelector: () => mockShots,
 }));
 jest.mock('../../store/features/shots/shotsSlice', () => ({
-  selectRecords: () => {},
+  selectShots: () => {},
 }));
 
 describe('ShootingPanel', () => {

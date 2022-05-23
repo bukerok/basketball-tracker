@@ -1,5 +1,10 @@
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import {
+  createAsyncThunk,
+  createSelector,
+  createSlice,
+} from '@reduxjs/toolkit';
 
+import shotFactory from '../../../helpers/functions/shotFactory';
 import { addError } from '../notifications/notificationsSlice';
 import {
   getAll,
@@ -51,9 +56,11 @@ export const addRecord = createAsyncThunk(
 export const removeRecord = createAsyncThunk(
   'shots/removeRecord',
   async (date) => {
-    await remove(date);
+    const key = date.toISOString();
 
-    return date;
+    await remove(key);
+
+    return key;
   },
 );
 
@@ -80,13 +87,23 @@ export const shotsSlice = createSlice({
   },
 });
 
-export const selectRecords = (state) => state.shots.records;
+const selectRawShots = ({ shots }) => shots.records;
 
-export const selectLast5Records = (state) => {
-  const records = selectRecords(state);
+export const selectShots = createSelector(
+  selectRawShots,
+  (rawShots) => {
+    return rawShots.map((rawShot) => {
+      return shotFactory(rawShot);
+    });
+  },
+);
 
-  return records.slice(Math.max(records.length - 5, 0))
-    .reverse();
-};
+export const selectLast5Shots = createSelector(
+  selectShots,
+  (records) => {
+    return records.slice(Math.max(records.length - 5, 0))
+      .reverse();
+  },
+);
 
 export default shotsSlice.reducer;

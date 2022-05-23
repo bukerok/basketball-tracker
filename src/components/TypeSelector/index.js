@@ -3,7 +3,7 @@ import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 
-import { PROP_TO_LABEL_MAP } from '../../helpers/shooting';
+import { TYPE_TO_LABEL_MAP } from '../../helpers/shooting';
 import { SHOT_TYPES } from '../../helpers/constants/shooting';
 
 import './index.scss';
@@ -30,7 +30,7 @@ const TypeSelector = ({
               key={type}
               value={type}
               control={<Radio />}
-              label={PROP_TO_LABEL_MAP[type]}
+              label={TYPE_TO_LABEL_MAP[type]}
               labelPlacement="top"
             />
           );

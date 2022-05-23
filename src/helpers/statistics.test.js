@@ -1,3 +1,4 @@
+import ZoneShot from './classes/ZoneShot';
 import { SHOT_TYPES } from './constants/shooting';
 import {
   calculateStats,
@@ -9,18 +10,16 @@ describe('statistics helper', () => {
   describe('calculateStats', () => {
     it('should accumulate values from same category', () => {
       const mockRecords = [
-        {
-          date: 'mockDate',
+        new ZoneShot({
           zone: 2,
           score: 7,
           attempts: 13,
-        },
-        {
-          date: 'mockDate2',
+        }),
+        new ZoneShot({
           zone: 4,
           score: 3,
           attempts: 7,
-        },
+        }),
       ];
 
       expect(calculateStats(mockRecords)[SHOT_TYPES.twoPoint]).toStrictEqual({
@@ -57,24 +56,21 @@ describe('statistics helper', () => {
 
     it('should accumulate records by zone', () => {
       const mockRecords = [
-        {
-          date: 'mockDate',
+        new ZoneShot({
           zone: 2,
           score: 7,
           attempts: 13,
-        },
-        {
-          date: 'mockDate2',
+        }),
+        new ZoneShot({
           zone: 4,
           score: 3,
           attempts: 7,
-        },
-        {
-          date: 'mockDate3',
+        }),
+        new ZoneShot({
           zone: 2,
           score: 13,
           attempts: 27,
-        }
+        }),
       ];
       const result = calculateZoneStats(mockRecords);
 

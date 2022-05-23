@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 
 import ZoneStatsSheet from '../../components/ZoneStatsSheet';
 import { calculateStat, calculateZoneStats } from '../../helpers/statistics';
-import { selectRecords } from '../../store/features/shots/shotsSlice';
+import { selectShots } from '../../store/features/shots/shotsSlice';
 import { ReactComponent as Zones} from './zones.svg';
 
 import './index.scss';
@@ -25,7 +25,7 @@ const getZoneClass = (value) => {
 
 export default function ZonesStats() {
   const [drawerData, setDrawerData] = useState();
-  const data = calculateZoneStats(useSelector(selectRecords));
+  const data = calculateZoneStats(useSelector(selectShots));
 
   useEffect(() => {
     const zonesSvg = document.querySelector('.zones-stats__zones');

@@ -11,14 +11,14 @@ import {
 } from 'recharts';
 import Typography from '@material-ui/core/Typography';
 
-import { aggregateRecords } from '../../helpers/graph';
-import { selectRecords } from '../../store/features/shots/shotsSlice';
+import { aggregateShots } from '../../helpers/graph';
+import { selectShots } from '../../store/features/shots/shotsSlice';
 
 import './index.scss';
 
 export default function ShotsStatsGraph() {
-  const records = useSelector(selectRecords);
-  const data = aggregateRecords(records);
+  const shots = useSelector(selectShots);
+  const data = aggregateShots(shots);
 
   return (
     <div className="shots-stats-graph">

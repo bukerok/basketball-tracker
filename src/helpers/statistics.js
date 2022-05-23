@@ -1,5 +1,4 @@
 import { SHOT_TYPES } from './constants/shooting';
-import { getZoneProp } from './shooting';
 
 export const formatStat = (data) => {
   const value = calculateStat(data);
@@ -23,19 +22,10 @@ export const calculateStat = ({
   return score / attempts * 100;
 };
 
-export const calculateStats = (records = []) => {
-  return records.reduce(((acc, record) => {
-    const {
-      zone,
-      score,
-      attempts,
-    } = record;
-    const prop = getZoneProp(zone);
-
-    if (prop) {
-      acc[prop].score += score;
-      acc[prop].attempts += attempts;
-    }
+export const calculateStats = (shots = []) => {
+  return shots.reduce(((acc, aShot) => {
+    acc[aShot.type].score += aShot.score;
+    acc[aShot.type].attempts += aShot.attempts;
 
     return acc;
   }), {
@@ -54,24 +44,16 @@ export const calculateStats = (records = []) => {
   });
 };
 
-export const calculateZoneStats = (records = []) => {
-  return records.reduce((acc, record) => {
-    const {
-      zone,
-      score,
-      attempts,
-    } = record;
-    let accData = acc[zone];
-
-    if (!accData) {
-      acc[zone] = {
-        score,
-        attempts,
-      };
-    } else {
-      accData.score += score;
-      accData.attempts += attempts;
+export const calculateZoneStats = (shots = []) => {
+  return shots.reduce((acc, aShot) => {
+    if (!aShot.zone) {
+      return acc;
     }
+
+    acc[aShot.zone] = {
+      score: aShot.score + (acc[aShot.zone]?.score || 0),
+      attempts: aShot.attempts + (acc[aShot.zone]?.attempts || 0),
+    };
 
     return acc;
   }, {});
