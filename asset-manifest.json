@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/basketball-tracker/static/css/main.d78b6c0c.chunk.css",
-    "main.js": "/basketball-tracker/static/js/main.b11e5558.chunk.js",
-    "main.js.map": "/basketball-tracker/static/js/main.b11e5558.chunk.js.map",
+    "main.css": "/basketball-tracker/static/css/main.9f55d4a5.chunk.css",
+    "main.js": "/basketball-tracker/static/js/main.fb3a68a9.chunk.js",
+    "main.js.map": "/basketball-tracker/static/js/main.fb3a68a9.chunk.js.map",
     "runtime-main.js": "/basketball-tracker/static/js/runtime-main.ed0fb0a6.js",
     "runtime-main.js.map": "/basketball-tracker/static/js/runtime-main.ed0fb0a6.js.map",
-    "static/js/2.1a4bd1ab.chunk.js": "/basketball-tracker/static/js/2.1a4bd1ab.chunk.js",
-    "static/js/2.1a4bd1ab.chunk.js.map": "/basketball-tracker/static/js/2.1a4bd1ab.chunk.js.map",
+    "static/js/2.4ee28d58.chunk.js": "/basketball-tracker/static/js/2.4ee28d58.chunk.js",
+    "static/js/2.4ee28d58.chunk.js.map": "/basketball-tracker/static/js/2.4ee28d58.chunk.js.map",
     "index.html": "/basketball-tracker/index.html",
-    "static/css/main.d78b6c0c.chunk.css.map": "/basketball-tracker/static/css/main.d78b6c0c.chunk.css.map",
-    "static/js/2.1a4bd1ab.chunk.js.LICENSE.txt": "/basketball-tracker/static/js/2.1a4bd1ab.chunk.js.LICENSE.txt",
+    "static/css/main.9f55d4a5.chunk.css.map": "/basketball-tracker/static/css/main.9f55d4a5.chunk.css.map",
+    "static/js/2.4ee28d58.chunk.js.LICENSE.txt": "/basketball-tracker/static/js/2.4ee28d58.chunk.js.LICENSE.txt",
     "static/media/zones.25742149.svg": "/basketball-tracker/static/media/zones.25742149.svg",
     "static/media/zones.9131f58c.svg": "/basketball-tracker/static/media/zones.9131f58c.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.ed0fb0a6.js",
-    "static/js/2.1a4bd1ab.chunk.js",
-    "static/css/main.d78b6c0c.chunk.css",
-    "static/js/main.b11e5558.chunk.js"
+    "static/js/2.4ee28d58.chunk.js",
+    "static/css/main.9f55d4a5.chunk.css",
+    "static/js/main.fb3a68a9.chunk.js"
   ]
 }
