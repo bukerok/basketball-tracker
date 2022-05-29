@@ -1,0 +1,22 @@
+.button-input {
+  display: flex;
+  align-items: center;
+
+  &__label {
+    margin: 0 8px;
+    color: var(--text-secondary);
+    text-align: right;
+  }
+
+  &__control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__value {
+    box-sizing: border-box;
+    padding: 12px;
+    height: 42px;
+  }
+}

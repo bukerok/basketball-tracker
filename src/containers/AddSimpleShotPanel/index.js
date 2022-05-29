@@ -4,7 +4,9 @@ import SimpleShotInput from '../../components/SimpleShotInput';
 import { addError } from '../../store/features/notifications/notificationsSlice';
 import { addRecord, noShotsError } from '../../store/features/shots/shotsSlice';
 
-const AddSimpleShotPanel = () => {
+const AddSimpleShotPanel = ({
+  inputType,
+}) => {
   const dispatch = useDispatch();
 
   const handleAdd = (type, shots) => {
@@ -34,7 +36,10 @@ const AddSimpleShotPanel = () => {
   };
 
   return (
-    <SimpleShotInput onAdd={handleAdd}/>
+    <SimpleShotInput
+      inputType={inputType}
+      onAdd={handleAdd}
+    />
   );
 };
 

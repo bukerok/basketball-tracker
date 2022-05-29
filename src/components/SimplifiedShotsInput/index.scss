@@ -1,0 +1,17 @@
+.simplified-shots-input {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+
+  .button-input__label {
+    width: 80px;
+  }
+
+  &__attempts {
+    flex-direction: row-reverse;
+
+    .button-input__label {
+      text-align: left;
+    }
+  }
+}

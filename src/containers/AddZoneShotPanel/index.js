@@ -4,7 +4,9 @@ import ZoneShotInput from '../../components/ZoneShotInput';
 import { addError } from '../../store/features/notifications/notificationsSlice';
 import { addRecord, noShotsError } from '../../store/features/shots/shotsSlice';
 
-const AddZoneShotPanel = () => {
+const AddZoneShotPanel = ({
+  inputType,
+}) => {
   const dispatch = useDispatch();
 
   const handleAddZoneShot = (zone, shots) => {
@@ -40,7 +42,10 @@ const AddZoneShotPanel = () => {
   };
 
   return (
-    <ZoneShotInput onAdd={handleAddZoneShot}/>
+    <ZoneShotInput
+      inputType={inputType}
+      onAdd={handleAddZoneShot}
+    />
   );
 };
 

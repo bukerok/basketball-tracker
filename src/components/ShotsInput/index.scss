@@ -3,11 +3,4 @@
   align-items: center;
   justify-content: stretch;
   margin-bottom: 16px;
-
-  &__separator {
-    transform: rotateZ(15deg);
-    height: 100%;
-    margin: 0 16px;
-    border: 1px solid #616161;
-  }
 }
