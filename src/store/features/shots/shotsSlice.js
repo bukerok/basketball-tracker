@@ -23,13 +23,11 @@ export const noShotsError = () => (dispatch) => {
 
 export const setupRecords = createAsyncThunk(
   'shots/setupRecords',
-  async () => {
-    const records = await getAll();
-
-    return records;
+  () => {
+    return getAll();
   },
   {
-    condition: (payload, { getState }) => {
+    condition: (_payload, { getState }) => {
       const { status } = getState().shots;
 
       if (status === 'loading' || status === 'fetched') {
