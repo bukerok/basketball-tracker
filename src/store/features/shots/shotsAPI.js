@@ -12,11 +12,11 @@ const dbPromise = openDB('shots', 1, {
 
 export async function getAll() {
   return (await dbPromise).getAll(OBJ_NAME);
-};
+}
 
 export async function add(record) {
   return (await dbPromise).add(OBJ_NAME, record);
-};
+}
 
 export async function addAll(records) {
   const db = await dbPromise;
@@ -28,8 +28,8 @@ export async function addAll(records) {
     }),
     tx.done,
   ]);
-};
+}
 
 export async function remove(key) {
   return (await dbPromise).delete(OBJ_NAME, key);
-};
+}
