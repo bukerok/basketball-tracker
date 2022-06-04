@@ -52,7 +52,7 @@ describe('SimplifiedShotsInput', () => {
       />
     );
     const [scoreInput] = container.querySelectorAll('.button-input');
-    const [_scoreIncement, scoreDecrement] = scoreInput.querySelectorAll('button');
+    const scoreDecrement = scoreInput.querySelectorAll('button')[1];
 
     fireEvent.click(scoreDecrement);
 
@@ -76,7 +76,7 @@ describe('SimplifiedShotsInput', () => {
       />
     );
     const [scoreInput] = container.querySelectorAll('.button-input');
-    const [_scoreIncement, scoreDecrement] = scoreInput.querySelectorAll('button');
+    const scoreDecrement = scoreInput.querySelectorAll('button')[1];
 
     fireEvent.click(scoreDecrement);
 
@@ -99,7 +99,7 @@ describe('SimplifiedShotsInput', () => {
         onChange={mockOnChange}
       />
     );
-    const [_scoreInput, attemptsInput] = container.querySelectorAll('.button-input');
+    const attemptsInput = container.querySelectorAll('.button-input')[1];
     const [attemptsIncement] = attemptsInput.querySelectorAll('button');
 
     fireEvent.click(attemptsIncement);
@@ -123,8 +123,8 @@ describe('SimplifiedShotsInput', () => {
         onChange={mockOnChange}
       />
     );
-    const [_scoreInput, attemptsInput] = container.querySelectorAll('.button-input');
-    const [_attemptsIncement, attemptsDecrement] = attemptsInput.querySelectorAll('button');
+    const attemptsInput = container.querySelectorAll('.button-input')[1];
+    const attemptsDecrement = attemptsInput.querySelectorAll('button')[1];
 
     fireEvent.click(attemptsDecrement);
 
@@ -147,8 +147,8 @@ describe('SimplifiedShotsInput', () => {
         onChange={mockOnChange}
       />
     );
-    const [_scoreInput, attemptsInput] = container.querySelectorAll('.button-input');
-    const [_attemptsIncement, attemptsDecrement] = attemptsInput.querySelectorAll('button');
+    const attemptsInput = container.querySelectorAll('.button-input')[1];
+    const attemptsDecrement = attemptsInput.querySelectorAll('button')[1];
 
     fireEvent.click(attemptsDecrement);
 
@@ -190,8 +190,8 @@ describe('SimplifiedShotsInput', () => {
         onChange={mockOnChange}
       />
     );
-    const [_scoreInput, attemptsInput] = container.querySelectorAll('.button-input');
-    const [_attemptsIncement, attemptsDecrement] = attemptsInput.querySelectorAll('button');
+    const attemptsInput = container.querySelectorAll('.button-input')[1];
+    const attemptsDecrement = attemptsInput.querySelectorAll('button')[1];
 
     fireEvent.click(attemptsDecrement);
 
