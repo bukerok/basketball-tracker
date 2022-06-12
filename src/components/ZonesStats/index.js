@@ -38,22 +38,17 @@ export default function ZonesStats({
 
     zones.forEach((zone) => {
       const svg = zone.querySelector('svg');
-      const text = svg.querySelectorAll('text');
+      const text = svg.querySelector('text');
       const value = data[zone.dataset.zone];
 
       if (value) {
         const v = calculateStat(value);
-        const textV = `${v.toFixed(2)}%`;
 
-        text.forEach((t) => {
-          t.textContent = textV;
-        });
-        svg.setAttribute('class', getZoneClass(v));
+        text.textContent = `${v.toFixed(2)}%`;
+        zone.setAttribute('class', getZoneClass(v));
       } else {
-        text.forEach((t) => {
-          t.textContent = '-';
-        });
-        svg.setAttribute('class', '');
+        text.textContent = '';
+        zone.setAttribute('class', '');
       }
     });
   }, [data]);
