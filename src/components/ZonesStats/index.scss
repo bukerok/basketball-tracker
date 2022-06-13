@@ -1,8 +1,6 @@
 .zones-stats {
-  &__zones {
-    background-color: var(--playground-color);
-    user-select: none;
-  }
+  background-color: var(--playground-color);
+  user-select: none;
 
   .zone {
     &_low {

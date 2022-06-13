@@ -1,9 +1,5 @@
-import {
-  useEffect,
-  useState,
-} from 'react';
+import { useEffect } from 'react';
 
-import ZoneStatsSheet from '../../components/ZoneStatsSheet';
 import { calculateStat } from '../../helpers/statistics';
 import { ReactComponent as Zones } from './zones.svg';
 
@@ -24,11 +20,10 @@ const getZoneClass = (value) => {
 
 export default function ZonesStats({
   data,
+  onZoneSelect,
 }) {
-  const [drawerData, setDrawerData] = useState();
-
   useEffect(() => {
-    const zonesSvg = document.querySelector('.zones-stats__zones');
+    const zonesSvg = document.querySelector('.zones-stats');
     const zones = zonesSvg.querySelectorAll('[data-type=zone]');
 
     zones.forEach((zone) => {
@@ -55,29 +50,13 @@ export default function ZonesStats({
       return;
     }
 
-    const { zone } = group.dataset;
-    const zoneValue = +zone;
-
-    setDrawerData({
-      zone: zoneValue,
-      ...data[zoneValue],
-    });
-  };
-  const handleZonesStatsClose = () => {
-    setDrawerData();
+    onZoneSelect(+group.dataset.zone);
   };
 
   return (
-    <div className="zones-stats">
-      <Zones
-        className="zones-stats__zones"
-        onClick={handleClick}
-      />
-      <ZoneStatsSheet
-        data={drawerData}
-        opened={!!drawerData}
-        onClose={handleZonesStatsClose}
-      />
-    </div>
+    <Zones
+      className="zones-stats"
+      onClick={handleClick}
+    />
   );
 }
