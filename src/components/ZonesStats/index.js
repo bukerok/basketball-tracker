@@ -29,11 +29,6 @@ export default function ZonesStats({
 
   useEffect(() => {
     const zonesSvg = document.querySelector('.zones-stats__zones');
-
-    if (!zonesSvg) {
-      return;
-    }
-
     const zones = zonesSvg.querySelectorAll('[data-type=zone]');
 
     zones.forEach((zone) => {
