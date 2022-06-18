@@ -38,6 +38,7 @@ export default function ZoneStatsSheet({
 
   return (
     <Drawer
+      aria-label="Zone Detailed Statistics"
       classes={{
         root: 'zone-stats-sheet',
         paper: 'zone-stats-sheet__paper',

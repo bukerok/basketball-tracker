@@ -15,12 +15,14 @@ module.exports = {
       pascalCase: true,
     });
     const componentName = `Svg${pascalCaseFilename}`;
-    const jsCode = transform.sync(sourceText, {}, {
+    const jsCode = transform.sync(sourceText, {
+      ref: true,
+    }, {
       componentName,
     });
     const componentExportCode =  `
       ${jsCode}
-      export { ${componentName} as ReactComponent };
+      export { ForwardRef as ReactComponent };
     `;
 
     return {

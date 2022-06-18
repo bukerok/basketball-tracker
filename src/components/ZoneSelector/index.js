@@ -14,7 +14,7 @@ export default function ZoneSelector({
   const svgRef = useRef(null);
 
   useEffect(() => {
-    svgRef.current.querySelectorAll('g[data-type="zone"]')
+    svgRef.current?.querySelectorAll('g[data-type="zone"]')
       .forEach((el) => {
         const zone = +el.dataset.zone;
 

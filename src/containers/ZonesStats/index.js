@@ -7,7 +7,7 @@ import { calculateZoneStats } from '../../helpers/statistics';
 import { selectShots } from '../../store/features/shots/shotsSlice';
 
 export default function ZonesStats() {
-  const [drawerData, setDrawerData] = useState();
+  const [drawerData, setDrawerData] = useState(null);
   const data = calculateZoneStats(useSelector(selectShots));
 
   const handleZoneSelect = (zone) => {
@@ -18,7 +18,7 @@ export default function ZonesStats() {
   };
 
   const handleZonesStatsClose = () => {
-    setDrawerData();
+    setDrawerData(null);
   };
 
   return (
