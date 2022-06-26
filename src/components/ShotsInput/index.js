@@ -20,6 +20,7 @@ export default function ShotsInput({
   return (
     <div className="shots-input">
       <TextField
+        id="score-input"
         type="number"
         label="Score"
         variant="outlined"
@@ -28,6 +29,7 @@ export default function ShotsInput({
       />
       <ShotsDivider />
       <TextField
+        id="attempts-input"
         type="number"
         label="Attempts"
         variant="outlined"

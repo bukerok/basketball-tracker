@@ -22,9 +22,12 @@ const SimpleShotInput = ({
   }
 
   const handleAdd = () => {
-    setType(DEFAULT_TYPE);
-    setShots(null);
     onAdd(type, shots);
+
+    if (shots && !shots.error) {
+      setType(DEFAULT_TYPE);
+      setShots(null);
+    }
   };
 
   return (

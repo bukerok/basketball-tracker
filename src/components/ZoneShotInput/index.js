@@ -21,9 +21,12 @@ const ZoneShotInput = ({
   }
 
   const handleAdd = () => {
-    setZone(null);
-    setShots(null);
     onAdd(zone, shots);
+
+    if (shots && !shots.error) {
+      setZone(null);
+      setShots(null);
+    }
   };
 
   return (
