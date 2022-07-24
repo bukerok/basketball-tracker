@@ -1,17 +1,17 @@
 import React from 'react';
 import {render, fireEvent} from '@testing-library/react';
 
-import SimplifiedShotsInput from '.';
+import ButtonShotsInput from '.';
 
 const mockZeroShots = {
   score: 0,
   attempts: 0,
 };
 
-describe('SimplifiedShotsInput', () => {
+describe('ButtonShotsInput', () => {
   it('should render correctly', () => {
     const { container } = render(
-      <SimplifiedShotsInput shots={mockZeroShots}/>
+      <ButtonShotsInput shots={mockZeroShots}/>
     );
 
     expect(container.textContent).toBe('Score 0 Attempts 0');
@@ -22,7 +22,7 @@ describe('SimplifiedShotsInput', () => {
     const {
       container,
     } = render(
-      <SimplifiedShotsInput
+      <ButtonShotsInput
         shots={mockZeroShots}
         onChange={mockOnChange}
       />
@@ -43,7 +43,7 @@ describe('SimplifiedShotsInput', () => {
     const {
       container,
     } = render(
-      <SimplifiedShotsInput
+      <ButtonShotsInput
         shots={{
           score: 2,
           attempts: 3,
@@ -67,7 +67,7 @@ describe('SimplifiedShotsInput', () => {
     const {
       container,
     } = render(
-      <SimplifiedShotsInput
+      <ButtonShotsInput
         shots={{
           score: 0,
           attempts: 3,
@@ -91,7 +91,7 @@ describe('SimplifiedShotsInput', () => {
     const {
       container,
     } = render(
-      <SimplifiedShotsInput
+      <ButtonShotsInput
         shots={{
           score: 2,
           attempts: 3,
@@ -115,7 +115,7 @@ describe('SimplifiedShotsInput', () => {
     const {
       container,
     } = render(
-      <SimplifiedShotsInput
+      <ButtonShotsInput
         shots={{
           score: 2,
           attempts: 3,
@@ -139,7 +139,7 @@ describe('SimplifiedShotsInput', () => {
     const {
       container,
     } = render(
-      <SimplifiedShotsInput
+      <ButtonShotsInput
         shots={{
           score: 0,
           attempts: 0,
@@ -162,7 +162,7 @@ describe('SimplifiedShotsInput', () => {
     const mockOnChange = jest.fn();
 
     render(
-      <SimplifiedShotsInput
+      <ButtonShotsInput
         shots={{
           score: 15,
           attempts: 10,
@@ -182,7 +182,7 @@ describe('SimplifiedShotsInput', () => {
     const {
       container,
     } = render(
-      <SimplifiedShotsInput
+      <ButtonShotsInput
         shots={{
           score: 10,
           attempts: 10,

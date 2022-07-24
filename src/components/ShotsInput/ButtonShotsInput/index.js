@@ -1,13 +1,13 @@
-import useSimplifiedShotsInputs from '../../hooks/useSimplifiedShotsInputs';
-import ButtonInput from '../ButtonInput';
-import ShotsDivider from '../ShotsDivider';
+import useButtonShotsInput from '../../../hooks/useButtonShotsInput';
+import ButtonInput from '../../ButtonInput';
+import ShotsDivider from '../../ShotsDivider';
 
 import './index.scss';
 
-const SimplifiedShotsInput = ({
+export default function ButtonShotsInput({
   shots,
   onChange,
-}) => {
+}) {
   const {
     score,
     attempts,
@@ -15,10 +15,10 @@ const SimplifiedShotsInput = ({
     onScoreDecrement,
     onAttemptsIncement,
     onAttemptsDecrement,
-  } = useSimplifiedShotsInputs(shots, onChange);
+  } = useButtonShotsInput(shots, onChange);
 
   return (
-    <div className="simplified-shots-input">
+    <div className="button-shots-input">
       <ButtonInput
         label="Score"
         value={score}
@@ -27,7 +27,7 @@ const SimplifiedShotsInput = ({
       />
       <ShotsDivider />
       <ButtonInput
-        className="simplified-shots-input__attempts"
+        className="button-shots-input__attempts"
         label="Attempts"
         value={attempts}
         onIncrement={onAttemptsIncement}
@@ -35,6 +35,4 @@ const SimplifiedShotsInput = ({
       />
     </div>
   );
-};
-
-export default SimplifiedShotsInput;
+}

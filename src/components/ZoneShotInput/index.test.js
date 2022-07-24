@@ -7,7 +7,7 @@ describe('ZoneShotInput', () => {
   it('should render correctly', () => {
     render(
       <ZoneShotInput
-        inputType={SHOTS_INPUTS.common}
+        inputType={SHOTS_INPUTS.text}
       />
     );
 
@@ -21,7 +21,7 @@ describe('ZoneShotInput', () => {
 
     render(
       <ZoneShotInput
-        inputType={SHOTS_INPUTS.common}
+        inputType={SHOTS_INPUTS.text}
         onAdd={jest.fn()}
       />
     );

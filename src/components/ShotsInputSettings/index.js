@@ -32,8 +32,8 @@ const ShotsInputSettings = ({
           value={settings.inputType}
           onChange={handleInputTypeChange}
         >
-          <MenuItem value={SHOTS_INPUTS.common}>Common</MenuItem>
-          <MenuItem value={SHOTS_INPUTS.simplified}>Simplified</MenuItem>
+          <MenuItem value={SHOTS_INPUTS.text}>Text input</MenuItem>
+          <MenuItem value={SHOTS_INPUTS.button}>Button input</MenuItem>
         </Select>
       </div>
     </div>

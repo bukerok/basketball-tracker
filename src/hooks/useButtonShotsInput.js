@@ -7,7 +7,7 @@ const getShots = (score, attempts) => {
   };
 };
 
-export default function useSimplifiedShotsInputs(shots, onChange) {
+export default function useButtonShotsInput(shots, onChange) {
   const [score, setScore] = useState(0);
   const [attempts, setAttempts] = useState(0);
 

@@ -1,10 +1,8 @@
 import { useState } from 'react';
 import Button from '@material-ui/core/Button';
 
-import { SHOTS_INPUTS } from '../../helpers/constants/shotsInputs';
-import ShotsInput from '../ShotsInput';
 import ZoneSelector from '../ZoneSelector';
-import SimplifiedShotsInput from '../SimplifiedShotsInput';
+import { getInputComponent } from '../../helpers/functions/inputComponentFactory';
 
 import './index.scss';
 
@@ -14,11 +12,7 @@ const ZoneShotInput = ({
 }) => {
   const [zone, setZone] = useState(null);
   const [shots, setShots] = useState(null);
-  let InputComponent = ShotsInput;
-
-  if (inputType === SHOTS_INPUTS.simplified) {
-    InputComponent = SimplifiedShotsInput;
-  }
+  const InputComponent = getInputComponent(inputType);
 
   const handleAdd = () => {
     onAdd(zone, shots);

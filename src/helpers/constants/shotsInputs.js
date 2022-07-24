@@ -1,8 +1,8 @@
 export const SHOTS_INPUTS = {
-  simplified: 'simplified',
-  common: 'common',
+  button: 'button',
+  text: 'text',
 };
 
 export const DEFAULT_SETTINGS = {
-  inputType: SHOTS_INPUTS.common,
+  inputType: SHOTS_INPUTS.text,
 };

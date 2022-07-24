@@ -8,7 +8,7 @@ describe('SimpleShotInput', () => {
   it('should render correctly', () => {
     render(
       <SimpleShotInput
-        inputType={SHOTS_INPUTS.common}
+        inputType={SHOTS_INPUTS.text}
       />
     );
 
@@ -22,7 +22,7 @@ describe('SimpleShotInput', () => {
 
     render(
       <SimpleShotInput
-        inputType={SHOTS_INPUTS.common}
+        inputType={SHOTS_INPUTS.text}
         onAdd={jest.fn()}
       />
     );

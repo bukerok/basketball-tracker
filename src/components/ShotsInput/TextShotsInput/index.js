@@ -1,12 +1,12 @@
 import TextField from '@material-ui/core/TextField';
 
-import useShotsInputs from '../../hooks/useShotsInputs';
-import ShotsDivider from '../ShotsDivider';
+import useShotsInputs from '../../../hooks/useShotsInputs';
+import ShotsDivider from '../../ShotsDivider';
 
 import './index.scss';
 
 
-export default function ShotsInput({
+export default function TextShotsInput({
   shots,
   onChange,
 }) {
@@ -18,7 +18,7 @@ export default function ShotsInput({
   } = useShotsInputs(shots, onChange);
 
   return (
-    <div className="shots-input">
+    <div className="text-shots-input">
       <TextField
         id="score-input"
         type="number"
