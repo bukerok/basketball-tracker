@@ -23,7 +23,7 @@ const getValue = (score, attempts) => {
   };
 };
 
-export default function useShotsInputs(shots, onChange) {
+export default function useTextShotsInput(shots, onChange) {
   const [score, setScore] = useState('');
   const [attempts, setAttempts] = useState('');
 

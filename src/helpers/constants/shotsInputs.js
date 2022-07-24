@@ -1,4 +1,5 @@
 export const SHOTS_INPUTS = {
+  scoreMiss: 'score-miss',
   button: 'button',
   text: 'text',
 };

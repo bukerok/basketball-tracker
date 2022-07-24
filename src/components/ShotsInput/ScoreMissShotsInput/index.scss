@@ -1,0 +1,57 @@
+.score-miss-shots-input {
+  display: flex;
+  flex-direction: column;
+
+  &__value {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+
+    .text-value {
+      flex: 1 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__label {
+        margin-top: 0;
+        margin-bottom: 8px;
+      }
+
+      &__value {
+        font-size: 32px;
+        margin: 0;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__input-controls {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    height: 100px;
+    margin-bottom: 16px;
+
+    .button {
+      flex: 1 0 auto;
+      color: white;
+      font-size: 24px;
+
+      &__score {
+        background-color: #388e3c;
+      }
+
+      &__miss {
+        background-color: #d32f2f;
+      }
+    }
+  }
+
+  &__legend-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+}
