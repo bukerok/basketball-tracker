@@ -36,6 +36,7 @@ export default function ScoreMissShotsInput({
       </div>
       <div className="score-miss-shots-input__input-controls">
         <Button
+          aria-label="Score input"
           className="button button__score"
           variant="contained"
           onClick={onScore}
@@ -43,6 +44,7 @@ export default function ScoreMissShotsInput({
           Score
         </Button>
         <Button
+          aria-label="Miss input"
           className="button button__miss"
           variant="contained"
           onClick={onMiss}
