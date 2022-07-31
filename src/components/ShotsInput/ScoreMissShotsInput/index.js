@@ -20,14 +20,17 @@ export default function ScoreMissShotsInput({
 
   return (
     <div className="score-miss-shots-input">
-      <div className="score-miss-shots-input__value">
+      <div
+        className="score-miss-shots-input__value"
+        aria-label="Entered value"
+      >
         <div className="text-value">
-          <p className="text-value__label">Score</p>
+          <p className="text-value__label">Score </p>
           <p className="text-value__value">{score}</p>
         </div>
         <ShotsDivider />
         <div className="text-value">
-          <p className="text-value__label">Attempts</p>
+          <p className="text-value__label">Attempts </p>
           <p className="text-value__value">{attempts}</p>
         </div>
       </div>

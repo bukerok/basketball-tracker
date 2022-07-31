@@ -21,6 +21,7 @@ const getShots = (actions) => {
   });
 };
 
+// TODO add shots value processing
 export default function useScoreMissShotsInput(shots, onChange) {
   const [actions, setActions] = useState([]);
 
